@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchdotnet1.Text" xml:space="preserve">
+    <value>/** 1. Write a Program in C# to Check whether a number is Palindrome or not. **/
+
+using System;
+
+namespace SDM
+{
+    class Palindrome
+    {
+        static void Main(string[] args)
+        {
+            int n, r, sum = 0, temp;
+            Console.Write("Enter the Number: ");
+            n = int.Parse(Console.ReadLine());
+            temp = n;
+            while (n &gt; 0)
+            {
+                r = n % 10;
+                sum = (sum * 10) + r;
+                n = n / 10;
+            }
+            if (temp == sum)
+                Console.Write("Number is Palindrome.");
+            else
+                Console.Write("Number is not Palindrome");
+            Console.ReadKey();
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet2.Text" xml:space="preserve">
+    <value>/** 2. Write a Program in C# to demonstrate Command line arguments processing. **/
+
+using System;
+
+namespace SDC
+{
+    class cmdLnArgs
+    {
+        static void Main(string[] args)
+        {
+            int oprnd1, oprnd2;
+
+            oprnd1 = Convert.ToInt32(args[0]);
+            oprnd2 = Convert.ToInt32(args[1]);
+
+            Console.WriteLine("Sum = " + (oprnd1 + oprnd2));
+            Console.ReadKey();
+        }
+    }
+}
+
+
+</value>
+  </data>
+  <data name="rchdotnet3.Text" xml:space="preserve">
+    <value>/** 3. Write a Program in C# to find the roots of Quadratic Equation. **/
+
+using System;
+
+namespace QuadraticEqn
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int a, b, c;
+
+            double d, x1, x2;
+            Console.Write("\n\n");
+            Console.Write("Calculate root of Quadratic Equation :\n");
+            Console.Write("----------------------------------------");
+            Console.Write("\n\n");
+
+            Console.Write("Input the value of a : ");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the value of b : ");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input the value of c : ");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            d = b * b - 4 * a * c;
+            if (d == 0)
+            {
+                Console.Write("Both roots are equal.\n");
+                x1 = -b / (2.0 * a);
+                x2 = x1;
+                Console.Write("First  Root Root1= {0}\n", x1);
+                Console.Write("Second Root Root2= {0}\n", x2);
+            }
+            else if (d &gt; 0)
+            {
+                Console.Write("Both roots are real and diff-2\n");
+
+                x1 = (-b + Math.Sqrt(d)) / (2 * a);
+                x2 = (-b - Math.Sqrt(d)) / (2 * a);
+
+                Console.Write("First  Root Root1= {0}\n", x1);
+                Console.Write("Second Root root2= {0}\n", x2);
+            }
+            else
+                Console.Write("Root are imeainary;\nNo Solution. \n\n");
+
+            Console.ReadKey();
+        }
+    }
+}
+
+</value>
+  </data>
+  <data name="rchdotnet4.Text" xml:space="preserve">
+    <value>/** 4. Write a Program in C# to demonstrate boxing and unBoxing. **/
+
+using System;
+
+namespace boxingUnboxing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Boxing
+            int a = 10;
+            object obj =null;
+            Console.WriteLine("Boxing");
+            Console.WriteLine("Before boxing object value " + obj);
+
+            // converting value type to reference type
+            obj = a; 
+            Console.WriteLine("After boxing object value " + obj);
+
+            // Unboxing
+            int x=0;
+            Console.WriteLine("\nUnboxing");
+            Console.WriteLine("Before unboxing value is " + x);
+
+            // converting refernce type to value type
+            x =(int) obj;
+            Console.WriteLine("After unboxing value is " + x);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+</value>
+  </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>/** 4. Write a Program in C# to demonstrate boxing and unBoxing. **/
+
+using System;
+
+namespace boxingUnboxing
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Boxing
+            int a = 10;
+            object obj =null;
+            Console.WriteLine("Boxing");
+            Console.WriteLine("Before boxing object value " + obj);
+
+            // converting value type to reference type
+            obj = a; 
+            Console.WriteLine("After boxing object value " + obj);
+
+            // Unboxing
+            int x=0;
+            Console.WriteLine("\nUnboxing");
+            Console.WriteLine("Before unboxing value is " + x);
+
+            // converting refernce type to value type
+            x =(int) obj;
+            Console.WriteLine("After unboxing value is " + x);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+</value>
+  </data>
+  <data name="rchdotnet5.Text" xml:space="preserve">
+    <value>/** 5. Write a Program in C# to implement Stack operations. **/
+
+using System;
+using System.Collections;
+
+namespace StackOperation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creating a Stack 
+            int selected,length;
+            Stack myStack = new Stack();
+            while (true)
+            {
+                Console.WriteLine("\n\nStack operations");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Display");
+                Console.WriteLine("3. Pop");
+                Console.WriteLine("4. Peek");
+                Console.WriteLine("5. Count");
+                Console.WriteLine("6. Exit\n\n");
+                selected = Convert.ToInt32(Console.ReadLine());
+
+                switch (selected)
+                {
+                    case 1:
+                        Console.WriteLine("Enter how many elements");
+                        length = Convert.ToInt32(Console.ReadLine());
+                        for (int i = 0; i &lt; length; i++)
+                        {
+                            myStack.Push(Console.ReadLine());
+                        }
+                        break;
+                    case 2:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("stack is empty");
+                        else
+                            foreach (var item in myStack)
+                            {
+                                Console.WriteLine(item);
+                            }
+                        break;
+                    case 3:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("Stack is empty");
+                        else
+                            myStack.Pop();
+                        break;
+                    case 4:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("Stack is empty");
+                        else
+                            Console.WriteLine(myStack.Peek());
+                        break;
+                    case 5:
+                        Console.WriteLine("number of elements in stack is "+myStack.Count);
+                        break;
+                    default:
+                        goto exit;
+                }
+            }
+            exit:
+            Console.WriteLine("");
+        }
+    }
+}
+
+
+</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>/** 5. Write a Program in C# to implement Stack operations. **/
+
+using System;
+using System.Collections;
+
+namespace StackOperation
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Creating a Stack 
+            int selected,length;
+            Stack myStack = new Stack();
+            while (true)
+            {
+                Console.WriteLine("\n\nStack operations");
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Display");
+                Console.WriteLine("3. Pop");
+                Console.WriteLine("4. Peek");
+                Console.WriteLine("5. Count");
+                Console.WriteLine("6. Exit\n\n");
+                selected = Convert.ToInt32(Console.ReadLine());
+
+                switch (selected)
+                {
+                    case 1:
+                        Console.WriteLine("Enter how many elements");
+                        length = Convert.ToInt32(Console.ReadLine());
+                        for (int i = 0; i &lt; length; i++)
+                        {
+                            myStack.Push(Console.ReadLine());
+                        }
+                        break;
+                    case 2:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("stack is empty");
+                        else
+                            foreach (var item in myStack)
+                            {
+                                Console.WriteLine(item);
+                            }
+                        break;
+                    case 3:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("Stack is empty");
+                        else
+                            myStack.Pop();
+                        break;
+                    case 4:
+                        if (myStack.Count == 0)
+                            Console.WriteLine("Stack is empty");
+                        else
+                            Console.WriteLine(myStack.Peek());
+                        break;
+                    case 5:
+                        Console.WriteLine("number of elements in stack is "+myStack.Count);
+                        break;
+                    default:
+                        goto exit;
+                }
+            }
+            exit:
+            Console.WriteLine("");
+        }
+    }
+}
+
+
+</value>
+  </data>
+  <data name="rchdotnet6.Text" xml:space="preserve">
+    <value>/** 6. Write a program to demonstrate Operator overloading. **/
+
+using System;
+
+namespace OperatorOverloading
+{
+    class Line
+    {
+        public int Length;
+
+        public static Line operator +(Line l1, Line l2)
+        {
+            Line objLine = new Line();
+            objLine.Length = l1.Length + l2.Length;
+            return objLine;
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Line l1 = new Line();
+            Line l2 = new Line();
+
+            Console.WriteLine("Enter line1 length");
+            l1.Length =Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter line2 length");
+            l2.Length =Convert.ToInt32(Console.ReadLine());
+
+            Line l3 = l1 + l2;    
+            Console.WriteLine("sum is " + l3.Length );
+            Console.ReadKey();
+        }
+    }
+   
+}</value>
+  </data>
+  <data name="rchdotnet7.Text" xml:space="preserve">
+    <value>/** 7. Write a Program in C# to find the second largest element in a single dimensional array. **/
+
+using System;
+
+namespace SecondLargest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] arr = new int[10];
+            int i,j, first, second,n;
+
+            Console.WriteLine("Enter how many elments");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            //There should be atleast two elements 
+            if (n &lt; 2)
+            {
+                Console.WriteLine("There should be atleast two elements ");
+            }
+            else
+            {
+
+                // Read the elements from keyboard
+                Console.WriteLine("Enter {0} elements", n);
+                for (i = 0; i &lt; n; i++)
+                {
+                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                }
+
+                first = second = 0;
+                for (i = 0; i &lt; arr.Length; i++)
+                {
+                    // If current element is smaller than  
+                    // first then update both first and second 
+                    if (arr[i] &gt; first)
+                    {
+                        second = first;
+                        first = arr[i];
+                    }
+
+                    // If arr[i] is in between first   
+                    // and second then update second  
+                    else if (arr[i] &gt; second &amp;&amp; arr[i] != first)
+                        second = arr[i];
+                }
+
+                if (second == 0)
+                    Console.Write("There is no second largest element\n");
+                else
+                    Console.Write("The second largest element " + second);
+            }
+
+            Console.ReadKey();
+
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet8.Text" xml:space="preserve">
+    <value>/** 8. Write a program to reverse a given string using C#. **/
+
+using System;
+
+namespace stringReverse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "", reverse = "";
+            int Length = 0;
+            Console.WriteLine("Enter a Word");
+
+            //Getting String(word) from Console  
+            str = Console.ReadLine();
+
+            //Calculate length of string str  
+            Length = str.Length - 1;
+            while (Length &gt;= 0)
+            {
+                reverse = reverse + str[Length];
+                Length--;
+            }
+            //Displaying the reverse word  
+            Console.WriteLine("Reverse word is {0}", reverse);
+            Console.ReadLine();  
+        }
+    }
+}</value>
+  </data>
+  <data name="rchdotnet9.Text" xml:space="preserve">
+    <value>/** 9. Using Try, Catch and Finally blocks write a program in C# to demonstrate error handling. **/
+
+using System;
+
+namespace test
+{
+    public class Program
+    {
+        // Main Method 
+        static public void Main()
+        {
+            int a = 10, b = 0, c;
+            try
+            {
+                c = a / b;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            finally
+            {
+                Console.WriteLine("finally : exception raises or not but i will be executed");
+            }
+            Console.WriteLine("out of exception scope");
+            Console.ReadKey();
+
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet10.Text" xml:space="preserve">
+    <value>/** 10. Design a simple calculator using Switch Statement in C#. **/
+
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the action to be performed");
+            Console.WriteLine("Press 1 for Addition");
+            Console.WriteLine("Press 2 for Subtraction");
+            Console.WriteLine("Press 3 for Multiplication");
+            Console.WriteLine("Press 4 for Division \n");
+            int action = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 1st input");
+            int opr1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter 2nd input");
+            int opr2 = Convert.ToInt32(Console.ReadLine());
+            int result = 0;
+            switch (action)
+            {
+                case 1:
+                    {
+                        result = opr1 + opr2;
+                        break;
+                    }
+                case 2:
+                    {
+                        result = opr1 - opr2;
+                        break;
+                    }
+                case 3:
+                    {
+                        result = opr1 * opr2;
+                        break;
+                    }
+                case 4:
+                    {
+                        result = opr1 / opr2;
+                        break;
+                    }
+                default:
+                    Console.WriteLine("Wrong action!! try again");
+                    break;
+            }
+            Console.WriteLine("The result is {0}", result);
+            Console.ReadKey();
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet11.Text" xml:space="preserve">
+    <value>/** 11. Demonstrate Use of Virtual and override key words in C# with a simple program. **/
+
+using System;
+
+namespace VirtualOveride
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Base class, method draw is virtual
+            Shape objShape = new Shape();
+            objShape.draw();
+
+            // Derived class, method draw is overidden
+            Square objSquare = new Square();
+            objSquare.draw();
+
+            Console.ReadKey();
+        }
+    }
+
+    // Base class
+    class Shape
+    {
+        public virtual void draw()
+        {
+            Console.WriteLine("From base class : Shape");
+        }
+    }
+
+    // Derived class
+    class Square : Shape
+    {
+        public override void draw()
+        {
+            Console.WriteLine("From derived class, Method(draw) is overidden : Square");
+        }
+    }
+
+}
+</value>
+  </data>
+  <data name="rchdotnet12.Text" xml:space="preserve">
+    <value>/** 12. Implement linked lists in C# using the existing collections name space. **/
+
+using System;
+using System.Collections.Generic;
+
+namespace linkedList
+{
+    class linkedLists
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter how many nodes");
+            int length = Convert.ToInt32(Console.ReadLine());
+            LinkedList&lt;string&gt; linked = new LinkedList&lt;string&gt;();
+
+            Console.WriteLine("Enter {0} nodes value", length);
+            for (int i = 0; i &lt; length; i++)
+            {
+                linked.AddLast(Console.ReadLine());
+            }
+
+            while (true)
+            {
+                Console.WriteLine("\n Select the below option");
+                Console.WriteLine("1. Add node at first");
+                Console.WriteLine("2. Add node at last");
+                Console.WriteLine("3. Add node after given node value");
+                Console.WriteLine("4. Remove node at first");
+                Console.WriteLine("5. Remove node at last");
+                Console.WriteLine("6. Remove node after given node value");
+                Console.WriteLine("7. Exit");
+
+                int selected = Convert.ToInt32(Console.ReadLine());
+
+                if (selected == 1)
+                {
+                    Console.WriteLine("\n Enter new node value");
+                    linked.AddFirst(Console.ReadLine());
+
+                    Console.WriteLine("\n After adding node at first");
+                    DisplayList(linked);
+                }
+
+                if (selected == 2)
+                {
+                    Console.WriteLine("\n Enter new node value");
+                    linked.AddLast(Console.ReadLine());
+
+                    Console.WriteLine("\n After adding node at last");
+                    DisplayList(linked);
+                }
+
+                if (selected == 3)
+                {
+                    Console.WriteLine("Enter the existing node value where u want to insert new node");
+                    LinkedListNode&lt;string&gt; node = linked.Find(Console.ReadLine());
+                    Console.WriteLine("Enter new node");
+                    linked.AddAfter(node, Console.ReadLine());
+                    DisplayList(linked);
+                }
+
+                if (selected == 4)
+                {
+                    linked.RemoveFirst();
+
+                    Console.WriteLine("\n After removing node at first");
+                    DisplayList(linked);
+                }
+
+                if (selected == 5)
+                {
+                    linked.RemoveLast();
+
+                    Console.WriteLine("\n After removing node at last");
+                    DisplayList(linked);
+                }
+
+                if (selected == 6)
+                {
+                    Console.WriteLine("\n Enter the node value to remove");
+                    linked.Remove(Console.ReadLine());
+
+                    Console.WriteLine("\n After removing node at last");
+                    DisplayList(linked);
+                }
+
+                if (selected == 7)
+                {
+                    break;
+                }
+                
+            }
+        }
+
+        static void DisplayList(LinkedList&lt;string&gt; objLnk)
+        {
+            Console.WriteLine();
+            foreach (var value in objLnk)
+            {
+                Console.WriteLine(value);
+            }
+            Console.WriteLine();
+        }
+    }
+}</value>
+  </data>
+  <data name="rchdotnet13.Text" xml:space="preserve">
+    <value>/** 13. Write a program to demonstrate abstract class and abstract methods in C#. **/
+
+using System;
+
+namespace AbstractClsMthd
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            Console.WriteLine("Enter first and second values");
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+
+            // Creating an object 
+            MathsOprtion objMathsOprtion = new MathsOprtion();
+            Console.WriteLine("sum = {0}", objMathsOprtion.addition(a, b));
+            Console.WriteLine("substraction = {0}", objMathsOprtion.substraction(a, b));
+
+            Console.ReadKey();
+        }
+    }
+
+    // Abstract class having prototype.
+    abstract class Arithmatic
+    {
+        // Abstract method : doen't have implementation
+        public abstract int addition(int a, int b);
+
+        // Method have implementation
+        public int substraction(int a, int b)
+        {
+            return a - b;
+        }
+    }
+
+    // Class is implemented.
+    class MathsOprtion : Arithmatic
+    {
+        public override int addition(int a, int b)
+        {
+            return a + b;
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet14.Text" xml:space="preserve">
+    <value>/** 14. Write a program to illustrate the use of different properties in C#. **/
+
+using System;
+
+namespace Properties
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student objStd = new Student();
+            
+            // Accesing read only property i.e College Name
+            Console.WriteLine("College Name = {0}", objStd.CollegeName);
+
+            // setting property. Write property
+            objStd.Remarks = "Welcome";
+            //Console.WriteLine("College Name = {0}", objStd.Remarks);
+
+
+            // setting and accessing (Write and Read ) property
+            objStd.Name = "Kiran";
+            Console.WriteLine("Name : {0}", objStd.Name);
+
+            Console.ReadKey();
+        }
+    }
+
+    class Student
+    {
+        string collegeName="ABC", name, remarks;
+
+        // Read only property
+        public string CollegeName
+        {
+            get
+            {
+                return collegeName;
+            }
+        }
+
+        // Write only property
+        public string Remarks
+        {
+            set
+            {
+                remarks = value;
+            }
+        }
+
+        // Write and Read property
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }       
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet15.Text" xml:space="preserve">
+    <value>/** 15. Demonstrate arrays of interface types with a C# program. **/
+
+using System;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            student obj = new student();
+            Console.WriteLine("Student Info");
+            obj.acceptp();
+            Console.WriteLine("S-Course Info");
+            obj.acceptc();
+
+            Console.WriteLine("Student Details:-");
+            obj.displayp();
+            obj.displayc();
+            Console.ReadKey();
+        }
+    }
+
+    public interface Iperson
+    {
+        void acceptp();
+        void displayp();
+    }
+
+    public interface Icourse
+    {
+       void acceptc();
+        void displayc();
+    }
+
+    class student: Iperson, Icourse 
+    {
+        string name, fname, course;
+        int sem;
+        
+        public void acceptp()
+        {
+            Console.WriteLine("Enter name and fname:");
+            name = Console.ReadLine();
+            fname = Console.ReadLine();
+        }
+
+        public void displayp()
+        {
+            Console.WriteLine("Name=" +name);
+            Console.WriteLine("Fname=" +fname);
+        }
+
+        public void acceptc()
+        {
+            Console.WriteLine("Enter Course and Semester");
+            course = Console.ReadLine();
+            sem =Convert.ToInt32( Console.ReadLine());
+        }
+
+        public void displayc()
+        {
+            Console.WriteLine("course=" + course);
+            Console.WriteLine("semester=" + sem);
+        }
+    }
+}
+</value>
+  </data>
+  <data name="rchdotnet_con.Text" xml:space="preserve">
+    <value>                                                                          Practicals
+
+1. Write a Program in C# to Check whether a number is Palindrome or not.
+
+2. Write a Program in C# to demonstrate Command line arguments processing.
+
+3. Write a Program in C# to find the roots of Quadratic Equation.
+
+4. Write a Program in C# to demonstrate boxing and unBoxing.
+
+5. Write a Program in C# to implement Stack operations.
+
+6. Write a program to demonstrate Operator overloading.
+
+7. Write a Program in C# to find the second largest element in a single dimensional array.
+
+8. Write a program to reverse a given string using C#.
+
+9. Using Try, Catch and Finally blocks write a program in C# to demonstrate error handling.
+
+10. Design a simple calculator using Switch Statement in C#.
+
+11. Demonstrate Use of Virtual and override key words in C# with a simple program
+
+12. Implement linked lists in C# using the existing collections name space.
+
+13. Write a program to demonstrate abstract class and abstract methods in C#.
+
+14. Write a program to illustrate the use of different properties in C#.
+
+15. Demonstrate arrays of interface types with a C# program.</value>
+  </data>
+</root>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchunix2.Text" xml:space="preserve">
+    <value>#  2. Write a Shell Program to check whether a given year is leap year or not.
+
+clear
+echo "enter the year"
+read year
+if  [  `expr  $year  %  4`  -eq  0 ]
+then
+echo "year $year is leap year "
+else
+echo " year $year is not a leap year"
+fi
+</value>
+  </data>
+  <data name="rchunix3.Text" xml:space="preserve">
+    <value># 3. Write a shell Script program to check whether the given number is even or odd.
+
+clear
+echo "Enter the number"
+read n
+  if   [  `expr  $n  %  2`  -eq  0  ]
+  then
+echo "$n is even"
+ else
+echo "$n is odd"
+ fi
+</value>
+  </data>
+  <data name="rchunix4.Text" xml:space="preserve">
+    <value># 4. Write a shell program to check whether a given string is a palindrome or not.
+
+clear
+echo "Enter a String"
+read str
+len=`expr length $str`
+i=1
+while  [  $len  -gt  0  ]
+do
+ch=`echo  $str  |  cut  -c  $i`
+ch1=`echo  $str  |  cut  -c  $len`
+if  [  $ch  !=  $ch1  ]
+then
+echo "Given string is not a palindrome"
+exit
+fi
+len=`expr  $len -  1`
+i=`expr  $i  +  1`
+done
+echo "Given string is a palindrome"
+</value>
+  </data>
+  <data name="rchunix5.Text" xml:space="preserve">
+    <value># 5. Simple shell script for basic arithmetic operations.
+
+clear
+echo "Enter the value for x and y"
+read x
+read y
+echo "Addition: `expr  $x  +   $y`"
+echo "Multiplication: `expr  $x  \*  $y`"
+echo "Division : `expr $x  /  $y`"
+echo "Modulus : `expr $x  %  $y`"
+</value>
+  </data>
+  <data name="rchunix6.Text" xml:space="preserve">
+    <value># 6. Write a shell program to count the number of vowels.
+
+clear
+echo "Enter a String"
+read str
+count=0
+len=`expr length  $str`
+i=1
+while  [  $i  -le  $len  ]
+do
+        	ch=`echo $str | cut -c $i`
+        	case $ch in
+           		[aeiouAEIOU] ) count=`expr  $count  +  1`;;
+        	esac
+       	 i=`expr $i + 1`
+done
+echo "String is : $str"
+echo "Number of vowels in the string : $count"
+</value>
+  </data>
+  <data name="rchunix7.Text" xml:space="preserve">
+    <value># 7. Write a shell script to print the multiplication table for the given number.
+
+clear
+echo "Enter the number"
+read num
+i=1
+while [ $i  -le  10 ]
+do
+        echo "$num  *  $i = `expr $num  \*  $i`"
+        i=`expr $i + 1`
+done
+</value>
+  </data>
+  <data name="rchunix8.Text" xml:space="preserve">
+    <value># 8. Write a shell program to find the factorial of a given number.
+
+clear
+echo "Enter the number"
+read fact
+if  [  $fact  -eq  0  -o  $fact  -eq  1  ]
+then
+echo "Factorial is 1"
+else
+k=2
+sum=1
+while [  $k  -le  $fact  ]
+do
+sum=`expr $k \* $sum`
+k=`expr $k + 1`
+done
+echo "Factorial is: $sum"
+fi
+</value>
+  </data>
+  <data name="rchunix10.Text" xml:space="preserve">
+    <value># 10. Write a shell program to print a string in reverse order.
+
+clear
+echo "Enter a string"
+read str
+len=`expr length $str`
+while [  $len  -ge  1]
+do
+c=`echo $str | cut -c $len`
+strrev=$strrev$c
+len=`expr $len - 1`
+done
+echo "Original String is : $str"
+echo "Reverse String is : $strrev"
+</value>
+  </data>
+  <data name="rchunix11.Text" xml:space="preserve">
+    <value># 11. Write a shell program to display all the files in the current directory.
+
+clear
+for file  in  *
+do
+        if  [  -f  $file  ]
+        then
+                echo "$file is an ordinary file"
+        else [  -d  $file  ]
+                echo "$file is a directory file"
+        fi
+done
+</value>
+  </data>
+  <data name="rchunix12.Text" xml:space="preserve">
+    <value># 12. Write a shell script that computes the gross salary of a employee according to the following rules:
+#       i) If basic salary is &lt; 1500 then HRA =10% of the basic and DA =90% of the basic.
+#       ii) If basic salary is &gt;=1500 then HRA =Rs500 and DA=98% of the basic The basic salary is entered
+#           interactively through the key board.
+
+clear
+echo "Enter the Basic pay of an Employee in Rupees"
+read bsal
+if [ $bsal -lt 1500 ]
+then
+        hra=`expr  $bsal  /  100  \*  10`
+        da=`expr  $bsal  /  100  \*  90`
+else	
+        hra=`expr 500`
+        da=`expr  $bsal  / 100 \* 98`
+fi
+g=`expr $bsal + $hra + $da`
+echo "Gross Salary: $g"
+</value>
+  </data>
+  <data name="rchunix13.Text" xml:space="preserve">
+    <value># 13. Write a shell script to compute gcd lcm &amp; of two numbers. Use the basic function to find gcd &amp; LCM of N 
+#       numbers.
+
+clear
+echo "Enter the 2 numbers"
+read m n
+product=`expr $m  \*  $n`
+while  [  $m  -ne  $n  ]
+do
+        if  [  $m  -gt  $n  ]
+        then
+                m=`expr  $m  -  $n`
+                else
+                n=`expr  $n  -  $m`
+        fi
+done
+gcd=$n
+lcm=`expr  $product   /  $gcd`
+echo "LCM = $lcm"
+echo "GCD = $gcd"
+</value>
+  </data>
+  <data name="rchunix14.Text" xml:space="preserve">
+    <value># 14. Write a shell script that accepts a file name, starting and ending line numbers as arguments and displays all 
+#        the lines between the given line numbers.
+
+Vi sed.sh
+clear
+echo "Enter the Filename"        
+read fname
+echo "Enter the Starting Line Number"       
+read s
+echo "Enter the Ending Line Number"
+read d
+sed  -n  $s,$d\p  $fname  |  cat &gt; newfile
+cat newfile
+</value>
+  </data>
+  <data name="rchunix15.Text" xml:space="preserve">
+    <value># 15. Write a shell script that displays a list of all the files in the current directory to which the user has read, write 
+#       and execute permissions.
+
+clear
+echo "The List of Files in the Directory"
+echo "Which has Read Write and Execute Permission"
+for file in *
+do
+        if  [  -f  $file ]
+        then
+                if  [  -r  $file  -a  -w  $file  -a -x  $file  ]
+                then
+                        ls  -l  $file
+                fi
+        fi
+done
+</value>
+  </data>
+  <data name="rchunix1.Text" xml:space="preserve">
+    <value># 1. Use of Basic UNIX Shell Commands: ((man, who, cat, cd, cp, ps, ls, mv,rm, mkdir, rmdir, echo, 
+#     more, date, time, kill, history, chmod, chown, finger, pwd, cal, logout, shutdown) commands.
+
+man:-
+
+ man command in Linux is used to display the user manual of any command that we can run on the
+ terminal. It provides a detailed view of the command which includes NAME, SYNOPSIS, DESCRIPTION,
+ OPTIONS, EXIT STATUS, RETURN VALUES, ERRORS, FILES, VERSIONS, EXAMPLES, AUTHORS and SEE ALSO.
+ Syntax : $ man [COMMAND NAME]
+
+
+Who:-
+
+ Who command is used to find out the following information :
+1. Time of last system boot
+2. Current run level of the system
+3. List of logged in users and more.
+
+Description : The who command is used to get information about currently logged in user on to system.
+
+Syntax : $who [options] [filename] 
+
+
+Cat:-
+
+Cat(concatenate) command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files. 
+1) To view a single file
+Command:
+$cat filename
+Output
+It will show content of given filename
+2) To view multiple files
+Command:
+$cat file1 file2
+Output
+This will show the content of file1 and file2.
+3) To view contents of a file preceding with line numbers.
+Command:
+$cat -n filename
+Output
+It will show content with line number
+
+
+cd:-
+
+cd command in linux known as change directory command. It is used to change current working directory.
+Syntax: $ cd [directory]
+
+
+cp:-
+
+cp stands for copy. This command is used to copy files or group of files or directory. 
+It creates an exact image of a file on a disk with different file name. 
+cp command require at least two filenames in its arguments.
+Syntax:
+cp [OPTION] Source Destination
+cp [OPTION] Source Directory
+cp [OPTION] Source-1 Source-2 Source-3 Source-n Directory
+
+First and second syntax is used to copy Source file to Destination file or Directory.
+Third syntax is used to copy multiple Sources(files) to Directory.
+
+
+ps:-
+
+ps command is used to list the currently running processes and their PIDs along with some other information 
+depends on different options. It reads the process information from the virtual files in /proc file-system.
+ /proc contains virtual files, this is the reason it’s referred as a virtual file system.
+ps provides numerous options for manipulating the output according to our need.
+ Syntax : ps [options]
+
+
+ls:-
+
+ It is used to list information about files and directories within the file system. 
+The ls utility is a part of the GNU core utilities package which is installed on all Linux distributions.
+ syntax : ls [OPTIONS] [FILES]
+
+
+mv:-
+
+mv stands for move. mv is used to move one or more files or directories from one place to another in file system like UNIX.
+ It has two distinct functions:
+(i) It rename a file or folder.
+(ii) It moves group of files to different directory.
+No additional space is consumed on a disk during renaming. This command normally works silently means no prompt for confirmation.
+Syntax: mv [Option] source destination
+
+
+rm:-
+
+rm stands for remove here. rm command is used to remove objects such as files, directories, symbolic links and so on from the file system like UNIX. 
+To be more precise, rm removes references to objects from the filesystem, where those objects might have had multiple references
+ (for example, a file with two different names). By default, it does not remove directories.
+ Syntax: rm [OPTION]... FILE...
+                                                   
+
+mkdir:-
+
+mkdir command in Linux allows the user to create directories (also referred to as folders in some operating systems ). 
+This command can create multiple directories at once as well as set the permissions for the directories. 	
+Syntax: mkdir [options...] [directories ...]
+
+
+rmdir:-
+
+rmdir command is used remove empty directories from the filesystem in Linux.
+The rmdir command removes each and every directory specified in the command line only if these directories are empty.
+
+
+echo:-
+
+echo command in linux is used to display line of text/string that are passed as an argument . 
+This is a built in command that is mostly used in shell scripts and batch files to output status text to the screen or a file.
+Syntax : echo [option] [string]
+
+
+more:-
+
+more command is used to view the text files in the command prompt, displaying one screen at a time in case 
+the file is large (For example log files). The more command also allows the user do scroll up and down through the page. 
+When the output is large, we can use more command to see output one by one.
+Syntax: more [-options] [-num] [+/pattern] [+linenum] [file_name]
+
+·[-options]: any option that you want to use in order to change the way the file is displayed. Choose any one from the followings: (-d, -l, -f, -p, -c, -s, -u)
+·[-num]: type the number of lines that you want to display per screen.
+·[+/pattern]: replace the pattern with any string that you want to find in the text file.
+·[+linenum]: use the line number from where you want to start displaying the text content.
+·[file_name]: name of the file containing the text that you want to display on the screen.
+
+
+date:-
+
+date command is used to display the system date and time. date command is also used to set date and time of the system.
+ By default the date command displays the date in the time zone on which unix/linux operating system is configured.
+You must be the super-user (root) to change the date and time.
+Syntax: date [OPTION]... [+FORMAT]
+
+
+time:-
+
+time command in Linux is used to execute a command and prints a summary of real-time, user CPU time and system
+ CPU time spent by executing a command when it terminates.                    
+ Syntax: time [option] [COMMAND]
+
+
+Kill:-
+
+kill command in Linux (located in /bin/kill), is a built-in command which is used to terminate processes manually.
+ kill command sends a signal to a process which terminates the process. If the user doesn’t specify any signal which is to
+ be sent along with kill command then default TERM signal is sent that terminates the process.
+
+1. kill -l :To display all the available signals you can use below command option:
+Syntax: $kill -l
+
+
+History:-
+
+history command is used to view the previously executed command. This feature was not available in the Bourne shell.
+ Bash and Korn support this feature in which every command executed is treated as the event and is associated with an event number
+ using which they can be recalled and changed if required. These commands are saved in a history file.
+ In Bash shell history command shows the whole list of the command.
+Syntax: $ history 
+
+
+Chmod:-
+
+In Unix-like operating systems, the chmod command is used to change the access mode of a file.
+The name is an abbreviation of change mode.
+Syntax : chmod [reference][operator][mode] file... 
+
+
+chown:-
+
+chown command is used to change the file Owner or group. Whenever you want to change ownership you can use chown command.
+Syntax:
+chown [OPTION]… [OWNER][:[GROUP]] FILE…
+chown [OPTION]… -reference=RFILE FILE…
+
+
+finger:-
+
+The finger command looks up and displays information about system users.
+Syntax: finger [-lmsp] [user ...] [user@host ...]
+
+
+Pwd:-
+
+pwd stands for Print Working Directory. It prints the path of the working directory, starting from the root.
+pwd is shell built-in command(pwd) or an actual binary(/bin/pwd).
+$PWD is an environment variable  which stores the path of the current directory.
+This command has two flags.
+pwd -L: Prints the symbolic path.
+pwd -P: Prints the actual path.
+
+
+cal:-
+
+cal command is a calendar command in Linux which is used to see the calendar of a specific month or a whole year.
+Syntax: cal [ [ month ] year]
+
+
+Logout:-
+
+logout command allows you to programmatically logout from your session. causes the session manager to take the requested action immediately.
+Syntax: $logout
+
+
+Shoutdown:-
+
+The shutdown command in Linux is used to shutdown the system in a safe way. 
+You can shutdown the machine immediately, or schedule a shutdown using 24 hour format.
+It brings the system down in a secure way. When the shutdown is initiated, all logged-in users and processes are 
+notified that the system is going down, and no further logins are allowed.
+Only root user can execute shutdown command.
+Syntax: shutdown [OPTIONS] [TIME] [MESSAGE]
+
+
+</value>
+  </data>
+  <data name="rchunix_con.Text" xml:space="preserve">
+    <value>                                                                    Practicals
+
+1. Use of Basic UNIX Shell Commands: ((man, who, cat, cd, cp, ps, ls, mv,rm, mkdir, rmdir, echo, more, date, 
+     time, kill, history, chmod, chown, finger, pwd, cal, logout, shutdown) commands.
+
+2. Write a Shell Program to check whether a given year is leap year or not.
+
+3. Write a shell Script program to check whether the given number is even or odd.
+
+4. Write a shell program to check whether a given string is a palindrome or not.
+
+5. Simple shell script for basic arithmetic operations
+
+6. Write a shell program to count the number of vowels.
+
+7. Write a shell script to print the multiplication table for the given number.
+
+8. Write a shell program to find the factorial of a given number.
+
+9. Write a shell script to count lines, words and characters in its input
+
+10. Write a shell program to print a string in reverse order.
+
+11. Write a shell program to display all the files in the current directory.
+
+12. Write a shell script that computes the gross salary of a employee according to the following rules: 
+       i)If basic salary is &lt; 1500 then  HRA =10% of the basic and DA =90% of the basic. 
+       ii)If basic salary is &gt;=1500 then HRA =Rs500 and DA=98% of the basic
+       The basic salary is entered interactively through the key board.
+
+13. Write a shell script to compute gcd lcm &amp; of two numbers. Use the
+      basic function to find gcd &amp; LCM of N numbers.
+
+14. Write a shell script that accepts a file name, starting and ending line
+      numbers as arguments and displays all the lines between the given line numbers.
+
+15. Write a shell script that displays a list of all the files in the current
+      directory to which the user has read, write and execute permissions.</value>
+  </data>
+</root>

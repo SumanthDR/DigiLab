@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchcpp1.Text" xml:space="preserve">
+    <value>/** 1. Write a program to implement digital clock. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;time.h&gt;
+#include&lt;dos.h&gt;
+void main()
+{
+	char t[9];
+	clrscr();
+	while(!kbhit())
+	{
+		_strtime(t);
+		gotoxy(20,20);
+		cout&lt;&lt;t;
+		delay(1000);
+	}
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp2.Text" xml:space="preserve">
+    <value>/** 2. Write a program to calculate area &amp; circumference of the circle using inline function. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+inline float area(float r)
+{
+	return 3.14*r*r;
+}
+inline float circumference(float r)
+{
+	return 2*3.14*r;
+}
+void main()
+{
+	float r;
+	clrscr();
+	cout&lt;&lt;"\n Enter radius of circle=";
+	cin&gt;&gt;r;
+	cout&lt;&lt;"\n area of a circle="&lt;&lt;area(r);
+	cout&lt;&lt;"\n circumference of a circle="&lt;&lt;circumference(r);
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp3.Text" xml:space="preserve">
+    <value>/** 3.Write a program to find the factorial of a given number using command line arguments. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;stdlib.h&gt;
+int fact(int n);
+void main(int,char*ch[])
+{
+	int n,ans;
+	clrscr();
+	n=atoi(ch[1]);
+	ans=fact(n);
+	cout&lt;&lt;"\n factorial="&lt;&lt;ans;
+	getch();
+}
+int fact(int n)
+{
+	if(n==0)
+	return(1);
+	else
+	return(n*fact(n-1));
+}</value>
+  </data>
+  <data name="rchcpp4.Text" xml:space="preserve">
+    <value>/** 4. Write a program to prepare a shopping list using array of objects. **/
+
+#include&lt;iostream.h&gt; 
+#include&lt;conio.h&gt; 
+#include&lt;iomanip.h&gt; 
+const int size=3; 
+class item 
+{ 
+	private:char name[25]; 
+	float rate; 
+	int qty; 
+	float amount; 
+	public:void getdata() 
+	{ 
+		cout&lt;&lt;"enter item name:"; 
+		cin&gt;&gt;name; 
+		cout&lt;&lt;"enter item quantity:"; 
+		cin&gt;&gt;qty; 
+		cout&lt;&lt;"enter the rate:"; 
+		cin&gt;&gt;rate; 
+		cout&lt;&lt;endl; 
+	} 
+	void print() 
+	{ 
+		cout&lt;&lt;setw(2)&lt;&lt;name; 
+		cout&lt;&lt;setw(5)&lt;&lt;qty; 
+		cout&lt;&lt;setw(5)&lt;&lt;rate; 
+		amount=rate*qty; 
+		cout&lt;&lt;setw(7)&lt;&lt;amount&lt;&lt;endl; 
+	} 
+}; 
+void main() 
+{ 
+	int i; 
+	clrscr(); 
+	item shop[size]; 
+	for(i=0;i&lt;size;i++) 
+	shop[i].getdata(); 
+	cout&lt;&lt;"details of shopping list"&lt;&lt;endl; 
+	cout&lt;&lt;"-------------------------------"&lt;&lt;endl; 
+	cout&lt;&lt;"Name"&lt;&lt;setw(8)&lt;&lt;"qtu"&lt;&lt;setw(8)&lt;&lt;"rate"&lt;&lt;setw(8)&lt;&lt;"amount"&lt;&lt;endl; 
+	cout&lt;&lt;"-------------------------------------"&lt;&lt;endl; 
+	for(i=0;i&lt;size;i++) 
+	shop[i].print(); 
+	cout&lt;&lt;endl; 
+	getch(); 
+} </value>
+  </data>
+  <data name="rchcpp5.Text" xml:space="preserve">
+    <value>/** 5. Write a program to find the maximum of two numbers using friend function.**/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;iomanip.h&gt;
+class max
+{
+	private:int a,b;
+	public:void getdata()
+	{
+		cout&lt;&lt;"enter two nos"&lt;&lt;endl;
+		cin&gt;&gt;a&gt;&gt;b;
+	}
+	friend int biggest(max p,max q)
+	{
+		if(p.a&gt;q.b)
+		return p.a;
+		else
+		return q.b;
+	}
+};
+void main()
+{
+	clrscr();
+	max r;
+	r.getdata();
+	cout&lt;&lt;"maximum of two nos is="&lt;&lt;biggest(r,r);
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp6.Text" xml:space="preserve">
+    <value>/** 6. Write a program to swap two numbers using copy constructor. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class copy
+{
+	private: int v1,v2,t;
+	public: copy(int a, int b)
+		{
+			v1=a;
+			v2=b;
+		}
+		copy (copy &amp;obj)
+		{
+			v1=obj.v1;
+			v2=obj.v2;
+		}
+
+		void swap()
+		{
+			t=v1;
+			v1=v2;
+			v2=t;
+		}
+
+		void display()
+		{
+			cout&lt;&lt;" x = "&lt;&lt;v1;
+			cout&lt;&lt;" y = "&lt;&lt;v2;
+		}
+
+};
+
+void main()
+{
+	clrscr();
+	int x,y;
+	cout&lt;&lt;"\nenter the value of x and y :";
+	cin&gt;&gt;x&gt;&gt;y;
+	copy obj(x,y);
+	copy cpy=obj;
+
+	cout&lt;&lt;"\n"&lt;&lt;"Before swapping values are "&lt;&lt;"x= "&lt;&lt;x&lt;&lt;" y= "&lt;&lt;y;
+	cout&lt;&lt;"\n"&lt;&lt;"swapping values using obj objects ";
+	obj.swap();
+	obj.display();
+
+	cout&lt;&lt;"\n"&lt;&lt;"swapping values using copy objects ";
+	cpy.swap();
+	cpy.display();
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp7.Text" xml:space="preserve">
+    <value>/** 7. Write a program to find maximum of two numbers for different data types using template function. **/
+
+#include&lt;iostream.h&gt; 
+#include&lt;conio.h&gt; 
+template&lt;class L&gt; 
+L find(L m,L n) 
+{ 
+	L temp; 
+	if(m&gt;n) 
+	temp=m; 
+	else 
+	temp=n; 
+	return temp; 
+}; 
+void main() 
+{ 
+	int a,b,l1; 
+	float x,y,l2; 
+	clrscr(); 
+	cout&lt;&lt;"enter the two integer"&lt;&lt;endl; 
+	cin&gt;&gt;a&gt;&gt;b; 
+	l1=find(a,b); 
+	cout&lt;&lt;"largest of two integers is"&lt;&lt;l1&lt;&lt;endl; 
+	cout&lt;&lt;"enter the two real numbers"&lt;&lt;endl; 
+	cin&gt;&gt;x&gt;&gt;y; 
+	l2=find(x,y); 
+	cout&lt;&lt;"largest of two real nos is"&lt;&lt;l2; 
+	getch(); 
+} </value>
+  </data>
+  <data name="rchcpp8.Text" xml:space="preserve">
+    <value>/** 8. Write a program to write &amp; read the data on file. **/
+
+#include&lt;fstream.h&gt;
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int main()
+{
+         char ch,data[100];
+	clrscr();
+	int lines=0;
+	ofstream outfile;
+	outfile.open("abc.text");
+	cout&lt;&lt;"writing to the file"&lt;&lt;endl;
+	cout&lt;&lt;"enter your name:";
+	cin.getline(data,100);
+	outfile&lt;&lt;data&lt;&lt;endl;
+	cout&lt;&lt;"enter your age:";
+	cin&gt;&gt;data;
+	outfile&lt;&lt;data&lt;&lt;endl;
+	outfile.close();
+	ifstream infile;
+	infile.open("abc.text");
+	cout&lt;&lt;"reading from the file"&lt;&lt;endl;
+	while(!infile.eof())
+	{
+		infile.get(ch);
+		cout&lt;&lt;ch;
+		if(ch=='\n')
+		++lines;
+	}
+	cout&lt;&lt;"number of lines"&lt;&lt;lines&lt;&lt;endl;
+	infile.close();
+	getch();
+	return 0;
+}</value>
+  </data>
+  <data name="rchcpp9.Text" xml:space="preserve">
+    <value>/** 9. Write a program to perform bank transaction to find the total balance of amount of savings account &amp;
+          current account using friend function. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;iomanip.h&gt;
+class current;
+class saving
+{
+	private:char name[20];
+	int accno;
+	float balance;
+	public:void getdata()
+	{
+		cout&lt;&lt;"savings account details \n ";
+		cout&lt;&lt;"enter a name";
+		cin&gt;&gt;name;
+		cout&lt;&lt;"account number:";
+		cin&gt;&gt;accno;
+		cout&lt;&lt;"balance:";
+		cin&gt;&gt;balance;
+	}
+	friend float totbalance(saving,current);
+};
+class current
+{
+	private:char name[20];
+	int accno;
+	float balance;
+	public:void getdata()
+	{
+		cout&lt;&lt;"current account details \n ";
+		cout&lt;&lt;"enter a name";
+		cin&gt;&gt;name;
+		cout&lt;&lt;"account number:";
+		cin&gt;&gt;accno;
+		cout&lt;&lt;"balance:";
+		cin&gt;&gt;balance;
+	}
+	friend float totbalance(saving,current);
+};
+float totbalance(saving sav,current cur)
+{
+	cout&lt;&lt;endl&lt;&lt;"---------------------------"&lt;&lt;endl;
+	cout&lt;&lt;"saving account balance:RS"&lt;&lt;setw(5)&lt;&lt;sav.balance&lt;&lt;endl;
+	cout&lt;&lt;"current account balance:RS"&lt;&lt;setw(5)&lt;&lt;cur.balance&lt;&lt;endl;
+	return(sav.balance+cur.balance);
+}
+void main()
+{
+	saving s;
+	current c;
+	clrscr();
+	s.getdata();
+	c.getdata();
+	cout&lt;&lt;"total balance:rs"&lt;&lt;setw(6)&lt;&lt;totbalance(s,c)&lt;&lt;endl;
+	cout&lt;&lt;endl&lt;&lt;"---------------------------------"&lt;&lt;endl;
+	getch();
+}
+</value>
+  </data>
+  <data name="rchcpp10.Text" xml:space="preserve">
+    <value>/** 10. Write a program to print the sum of two complex numbers using friend function. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+#include&lt;stdlib.h&gt;
+class complex
+{
+	private:float real,img;
+	public:void getdata()
+	{
+		cout&lt;&lt;”\n Enter real part:”;
+		cin&gt;&gt;real;
+		cout&lt;&lt;”\n Enter img part:”;
+		cin&gt;&gt;img;
+	}
+	void show()
+	{
+		if(img&lt;0)
+		cout&lt;&lt;real&lt;&lt;”-i”&lt;&lt;img;
+		else
+		cout&lt;&lt;real&lt;&lt;”+i”&lt;&lt;img;
+	}
+	friend complex operator+(complex c1,complex c2);
+	{
+		complex temp;
+		temp.real=c1.real+c2.real;
+		temp.img=c1.img+c2.img;
+		return(temp);
+	}
+};
+void main()
+{
+	clrscr();
+	complex c1,c2,c3;
+	cout&lt;&lt;”first complex number”;
+	c1.getdata();
+	cout&lt;&lt;”second complex number”;
+	c2.getdata();
+	c3=c1+c2;
+	cout&lt;&lt;”sum of complex no=”;
+	c3.show();
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp11.Text" xml:space="preserve">
+    <value>/** 11. Write a program to perform addition of two matrices using + operator overloading. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int r,c;
+class matrix
+{
+	private:int a[10][10];
+	public:void accept()
+	{
+		int i,j;
+		for(i=0;i&lt;r;i++)
+		{
+			for(j=0;j&lt;c;j++)
+			{
+				cin&gt;&gt;a[i][j];
+			}
+		}
+	}
+	void display()
+	{
+		int i,j;
+		for(i=0;i&lt;r;i++)
+		{
+			for(j=0;j&lt;c;j++)
+			{
+				cout&lt;&lt;" "&lt;&lt;a[i][j];
+				cout&lt;&lt;"\n";
+			}
+		}
+	}
+	matrix operator +(matrix m2)
+	{
+		matrix m;
+		for(int i=0;i&lt;r;i++)
+		for(int j=0;j&lt;c;j++)
+		m.a[i][j]=a[i][j]+m2.a[i][j];
+		return(m);
+	}
+};
+void main()
+{
+	matrix m1,m2,m3;
+	clrscr();
+	cout&lt;&lt;"enter the no of rows and columns:"&lt;&lt;endl;
+	cin&gt;&gt;r&gt;&gt;c;
+	cout&lt;&lt;"enter first matrix elements:"&lt;&lt;endl;
+	m1.accept();
+	cout&lt;&lt;"enter the second matrix elements:"&lt;&lt;endl;
+	m2.accept();
+	m3=m1+m2;
+	cout&lt;&lt;"\n first matrix:\n";
+	m1.display();
+	cout&lt;&lt;"\n second matrix:\n";
+	m2.display();
+	cout&lt;&lt;"sum of two matrix:"&lt;&lt;endl;
+	m3.display();
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp12.Text" xml:space="preserve">
+    <value>/** 12. Write program to perform multiplication of two matrices using * operator overloading.**/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class Matrix
+{
+	private: int r,c,i,j,a[10][10];
+	public : void accept()
+	{
+		cout&lt;&lt;"Enter row and column "&lt;&lt;endl;
+		cin&gt;&gt;r&gt;&gt;c;
+		cout&lt;&lt;"Enter the elements"&lt;&lt;endl;
+		for(i=0;i&lt;r;i++)
+		for(j=0;j&lt;c;j++)
+		cin&gt;&gt;a[i][j];
+	}
+	void display()
+	{
+		cout&lt;&lt;"elements in a array"&lt;&lt;endl;
+		for(i=0;i&lt;r;i++)
+		{
+			for(j=0;j&lt;c;j++)
+			cout&lt;&lt;" "&lt;&lt;a[i][j];
+			cout&lt;&lt;endl;
+		}
+	}
+	Matrix operator *(Matrix m2)
+	{
+		Matrix m3;
+		m3.r=r;
+		m3.c=c;
+		for(i=0;i&lt;r;i++)
+		{
+			for(j=0;j&lt;c;j++)
+			{
+				m3.a[i][j]=0;
+				for(int k=0;k&lt;c;k++)
+				m3.a[i][j]=m3.a[i][j]+a[i][k]* m2.a[k][j];
+			}
+		}
+		return m3;
+	}
+};
+void main()
+{
+	Matrix m1,m2,m3;
+	clrscr();
+	cout&lt;&lt;"First matrix"&lt;&lt;endl;
+	m1.accept();
+	m1.display();
+	cout&lt;&lt;"Second matrix"&lt;&lt;endl;
+	m2.accept();
+	m2.display();
+	cout&lt;&lt;"Resultant matrix"&lt;&lt;endl;
+	m3=m1*m2;
+	m3.display();
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp13.Text" xml:space="preserve">
+    <value>/** 13. Write a program to compare two given strings using == operator with friend function. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;string.h&gt;
+class string
+{
+	private:char name[10];
+	public:void accept()
+	{
+		cout&lt;&lt;"Enter the string value\n";
+		cin&gt;&gt;name;
+	}
+	void display()
+	{
+		cout&lt;&lt;" String= "&lt;&lt;name&lt;&lt;endl;
+	}
+	friend int operator==(string s1,string s2);
+};
+int operator==(string s1,string s2)
+{
+	int result;
+	result=strcmp(s1.name,s2.name);
+	return result;
+}
+void main()
+{
+	int a;
+	clrscr();
+	string s1,s2;
+	s1.accept();
+	s2.accept();
+	s1.display();
+	s2.display();
+	a=(s1==s2);
+	if(a==0)
+	{
+		cout&lt;&lt;"Two string are equal \n";
+	}
+	else
+	cout&lt;&lt;"Two strings are not equal \n";
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp14.Text" xml:space="preserve">
+    <value>/** 14. Write a program to concatenate two given strings using + operator with friend function. **/
+
+#include&lt;iostream.h&gt; 
+#include&lt;conio.h&gt; 
+#include&lt;string.h&gt; 
+class string 
+{ 
+	private:char name[30]; 
+	public:void accept() 
+	{ 
+		cout&lt;"Enter the string"; 
+		cin&gt;&gt;name; 
+	} 
+	void display() 
+	{ 
+		cout&lt;&lt;"string="&lt;&lt;name; 
+	} 
+	friend string operator =(string s1,string s2); 
+}; 
+string operator +(string s1,string s2) 
+{ 
+	string s3; 
+	strcpy(s3.name,s1.name); 
+	strcat(s3.Sname,s2.name); 
+	return s3; 
+} 
+void main() 
+{ 
+	string s1,s2,s3; 
+	s1.accept(); 
+	s2.accept(); 
+	s1.display(); 
+	s2.display(); 
+	s3=s1+s2; 
+	s3.display(); 
+	getch(); 
+} </value>
+  </data>
+  <data name="rchcpp15.Text" xml:space="preserve">
+    <value>/** 15. Write a program to create student report using inheritance technique. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class a
+{
+	private:int regno;
+	char name[20];
+	public:void accept1()
+	{
+		cout&lt;&lt;"\n Enter student name:";
+		cin&gt;&gt;name;
+		cout&lt;&lt;"\n enter regno";
+		cin&gt;&gt;regno;
+	}
+	void display1()
+	{
+		cout&lt;&lt;"\n name="&lt;&lt;name;
+		cout&lt;&lt;"\n regno="&lt;&lt;regno;
+	}
+};
+class b:public a
+{
+	private:char course[10];
+	int sem;
+	public:void accept2()
+	{
+		cout&lt;&lt;"enter course:";
+		cin&gt;&gt;course;
+		cout&lt;&lt;"enter semester:";
+		cin&gt;&gt;sem;
+	}
+	void display2()
+	{
+		cout&lt;&lt;"\n course="&lt;&lt;course;
+		cout&lt;&lt;"\n semester="&lt;&lt;sem;
+	}
+};
+class c:public b
+{
+	private:int m1,m2,m3,total;
+	public:void accept3()
+	{
+		cout&lt;&lt;"enter 3 subjects marks:";
+		cin&gt;&gt;m1&gt;&gt;m2&gt;&gt;m3;
+	}
+	void display3()
+	{
+		total=m1+m2+m3;
+		cout&lt;&lt;"\n subject 1 marks="&lt;&lt;m1;
+		cout&lt;&lt;"\n subject 2 marks="&lt;&lt;m2
+		cout&lt;&lt;"\n subject 3 marks="&lt;&lt;m3;
+		cout&lt;&lt;"\n total marks="&lt;&lt;total;
+	}
+};
+void main()
+{
+	c obj;
+	clrscr();
+	cout&lt;&lt;"\n enter student details";
+	obj.accept1();
+	obj.accept2();
+	obj.accept3();
+	cout&lt;&lt;"\n *****student report******"&lt;&lt;endl;
+	obj.display1();
+	obj.display2();
+	obj.display3();
+	getch();
+}</value>
+  </data>
+  <data name="rchcpp16.Text" xml:space="preserve">
+    <value>/** 16. Write a program to implement area of geometrical figures (circle &amp; square) using pure virtual function.**/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+class area
+{
+	public:virtual void areacs()=0;
+};
+class circle:public area
+{
+	private:int r;
+	public:void areacs()
+	{
+		cout&lt;&lt;"\n Enter radius of a circle:";
+		cin&lt;&lt;r;
+		cout&lt;&lt;"\n Area of a circle="&lt;&lt;(3.14*r*r);
+	}
+};
+class square:public area
+{
+	private:int side;
+	public:void areacs()
+	{
+		cout&lt;&lt;"\n Enter side of a square:";
+		cin&gt;&gt;side;
+		cout&lt;&lt;"\n Area of a square="&lt;&lt;(side*side);
+	}
+};
+void main()
+{
+	circle c;
+	square s;
+	clrscr();
+	c.areacs();
+	s.areacs();
+	getch();
+}	</value>
+  </data>
+  <data name="rchcpp_con.Text" xml:space="preserve">
+    <value>                                                                       Practicals
+
+1. Write a program to implement digital clock.
+
+2. Write a program to calculate area &amp; circumference of the circle using inline function.
+
+3. Write a program to find the factorial of a given number using command line arguments.
+
+4. Write a program to prepare a shopping list using array of objects.
+
+5. Write a program to find the maximum of two numbers using friend function.
+
+6. Write a program to swap two numbers using copy constructor.
+
+7. Write a program to find maximum of two numbers for different data types using template function.
+
+8. Write a program to write &amp; read the data on file.
+
+9. Write a program to perform bank transaction to find the total balance of
+amount of savings account &amp; current account using friend function.
+
+10. Write a program to print the sum of two complex numbers using friend function.
+
+11. Write a program to perform addition of two matrices using + operator overloading.
+
+12. Write program to perform multiplication of two matrices using * operator overloading.
+
+13. Write a program to compare two given strings using == operator with friend function.
+
+14. Write a program to concatenate two given strings using + operator with friend function.
+
+15. Write a program to create student report using inheritance technique.
+
+16. Write a program to implement area of geometrical figures (circle &amp; square) using pure virtual function.</value>
+  </data>
+</root>

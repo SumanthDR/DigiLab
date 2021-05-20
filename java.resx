@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchjava1.Text" xml:space="preserve">
+    <value>/** 1. Write a Java program to find the GCD of number. **/
+
+import java.util.Scanner;
+class Gcd1
+{
+	int gcd(int i,int j)
+	{
+		if(j==0)
+			return i;
+		else if(i&lt;j)
+			return gcd(j,i);
+		     else
+			return gcd(j,(i%j));
+	}
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of a:");
+		int a=sc.nextInt();
+		System.out.println("Enter the value of b:");
+		int b=sc.nextInt();
+		Gcd1 obj1=new Gcd1();
+		int res=obj1.gcd(a,b);
+		System.out.println("The GCD of a and b is "+res);
+	}
+}
+</value>
+  </data>
+  <data name="rchjava2.Text" xml:space="preserve">
+    <value>/** 2. Write a JAVA Program to demonstrate Constructor for calculating area of rectangle. **/
+
+import java.lang.*;
+class Drectangle2
+{
+	int len,br;
+	Drectangle2()
+	{
+		len=10;
+		br=20;
+	}
+	Drectangle2(int a,int b)
+	{
+		len=a;
+		br=b;
+	}
+	void area_cal()
+	{
+		System.out.println("The area of rectangle is "+(len*br));
+	}
+	public static void main(String args[])
+	{
+		Drectangle2 obj1=new Drectangle2();
+		Drectangle2 obj2=new Drectangle2(30,40);
+		obj1.area_cal();
+		obj2.area_cal();
+	}
+}
+</value>
+  </data>
+  <data name="rchjava3.Text" xml:space="preserve">
+    <value>/** 3. Write a JAVA Program to demonstrate Method Overloading. **/
+
+class Load3
+{
+	void add(int a,int b)
+	{
+		System.out.println("The sum is="+(a+b));	
+	}
+	
+	void add(float a,float b)
+	{
+		System.out.println("The sum is="+(a+b));	
+	}
+	
+	void add(float a,float b,float c)
+	{
+		System.out.println("The sum is="+(a+b+c));	
+	}
+	public static void main(String args[])
+	{
+		Load3 obj1=new Load3();
+		obj1.add(1,2);
+		obj1.add(2.3f,3.7f);
+		obj1.add(3.2f,4.5f,2.3f);
+	}
+}
+</value>
+  </data>
+  <data name="rchjava4.Text" xml:space="preserve">
+    <value>/ ** 4. Write a program in Java for String handling which performs the following:
+           i) Reverses the contents of a string given on console and 
+          ii) converts the resultant string in upper case. **/
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+class Dreverse6
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string to reverse:");
+		String str=sc.next();
+		char[] cstr=str.toCharArray();
+		int l=cstr.length;
+		char[] rev=new char[l];
+		int i,j=0;
+		for(i=l-1;i&gt;=0;i--)
+		{
+			rev[j]=cstr[i];
+			j++;
+		}
+		String upp=new String(rev);
+		System.out.println("The Upper case string is:"+upp.toUpperCase());
+	}
+}
+</value>
+  </data>
+  <data name="rchjava5.Text" xml:space="preserve">
+    <value>/** 5. Write a JAVA Program on interfaces to calculate the area of a rectangle and triangle. **/
+
+import java.*;
+interface i1
+{
+	float len=10,br=6;
+	public void AreaRect();
+}
+interface i2
+{
+	float base=2,height=8;
+	public void AreaTri();
+}
+class DemoInterface implements i1,i2
+{
+	public void AreaRect()
+	{
+		System.out.println("Area of Rectangle="+(len*br));
+	}
+	public void AreaTri()
+	{
+		System.out.println("Area of Triangle="+(0.5*base*height));
+	}
+	public static void main(String args[])
+	{
+		DemoInterface obj=new DemoInterface();
+		obj.AreaRect();
+		obj.AreaTri();
+	}
+}
+</value>
+  </data>
+  <data name="rchjava6.Text" xml:space="preserve">
+    <value>/** 6. Write a JAVA Program to Design a simple calculator using Switch Statement. **/
+
+import java.util.Scanner;
+class CalSwitch
+{
+	public static void main(String args[])
+	{
+		while(true)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("1.Addition");
+			System.out.println("2.Subtraction");
+			System.out.println("3.Multiplication");
+			System.out.println("4.Division");
+			System.out.println("Enter your choice:");
+			int ch=sc.nextInt();
+			int a,b;
+			switch(ch)
+	{
+		case 1: System.out.println("Enter a and b value:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Addition="+(a+b));
+			break;
+		case 2: System.out.println("Enter a and b value:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Subtraction="+(a-b));
+			break;
+		case 3: System.out.println("Enter a and b value:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Multiplication="+(a*b));
+			break;
+		case 4: System.out.println("Enter a and b value:");
+			a=sc.nextInt();
+			b=sc.nextInt();
+			System.out.println("Division="+(a/b));
+			break;
+		default:System.out.println("Invalid choice");
+			System.exit(0);
+			}
+		}
+	}
+}
+</value>
+  </data>
+  <data name="rchjava7.Text" xml:space="preserve">
+    <value>/** 7. Write a program to calculate area and perimeter of a rectangle using Super keyword. **/
+
+import java.util.Scanner;
+class Rectangle
+{
+	int l,b;
+	Rectangle()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the value of length:");
+		l=sc.nextInt();
+		System.out.println("Enter the value of breadth:");
+		b=sc.nextInt();
+	}
+	void area()
+	{
+		System.out.println("The area of rectangle is "+(l*b));
+	}
+	void perimeter()
+	{
+		int p=((2*l)+(2*b));
+		System.out.println("The perimeter of rectangle is "+p);
+	}
+}
+class Rect extends Rectangle
+{
+	Rect()
+	{
+		super();
+	}
+	public void cal()
+	{
+		super.area();
+		super.perimeter();
+	}
+}
+</value>
+  </data>
+  <data name="rchjava8.Text" xml:space="preserve">
+    <value>/** 8. Write a program to sort given Strings. **/
+
+import java.util.Scanner;
+public class Sort
+{
+	public static void main(String agrs[])
+	{
+		int i,j,n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter number of strings to sort");
+		n=sc.nextInt();
+		String Sort1[]=new String[n];
+		System.out.println("Enter the strings to sort");
+		for(i=0;i&lt;n;i++)
+		{
+			Sort1[i]=sc.next();
+		}
+		for(i=0;i&lt;Sort1.length;i++)
+		{
+			for(j=i+1;j&lt;Sort1.length;j++)
+			{
+				if(Sort1[j].compareTo(Sort1[i])&lt;0)
+				{
+					String temp=Sort1[i];
+					Sort1[i]=Sort1[j];
+					Sort1[j]=temp;
+				}
+			}
+		}
+		System.out.println("Sorted array is");
+		for(i=0;i&lt;Sort1.length;i++)
+		{
+			System.out.println(Sort1[i]);
+		}
+	}
+}
+</value>
+  </data>
+  <data name="rchjava9.Text" xml:space="preserve">
+    <value>/** 9. Design student application form and store in database and display. **/
+
+package javaapplication10;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+import java.awt.*;
+import java.awt.event.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+/**
+ *
+ * @author SDC
+ */
+public class java  {
+
+   
+    public String query;
+    //public String URL = "jdbc:mysql://localhost/student";
+    public String URL = "jdbc:mysql://localhost:3306/student?characterEncoding=latin1&amp;useConfigs=maxPerformance";
+    public String USR = "root";
+    public String PASS = "root";
+    public Statement dataRequest = null;
+    public ResultSet results = null;
+    public Connection con = null;
+    public int rowsupdated;
+    String name, rollno, branch, email;
+    
+    public void getConnection() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
+        con = DriverManager.getConnection(URL, USR, PASS);
+        dataRequest = con.createStatement();
+    }
+
+    public void getData() {
+        System.out.println("enter the value of name,roolno,branch,email");
+        Scanner sc = new Scanner(System.in);
+        name = sc.next();
+        rollno = sc.next();
+        branch = sc.next();
+        email = sc.next();
+    }
+
+    public void  searchData() throws ClassNotFoundException, SQLException {
+        getConnection();
+        System.out.println("enetr the student name");
+        Scanner sc=new Scanner(System.in);
+        String ser=sc.next();
+        String searchQuery;
+        searchQuery = "select *from student_table where name='"+ser+"'";
+        PreparedStatement stmt = con.prepareStatement(searchQuery);
+        results = stmt.executeQuery();
+        if (results.next()) {
+        System.out.println("Name   : " + results.getString("name") + "   " + "Roll No: " + results.getString("rollno") + "   " + "Branch : " + "   " + results.getString("branch") + "   " + "Email  : " + results.getString("email"));    
+        } else {
+        System.out.println("no data");
+        }
+    }
+
+    public void insertData() throws ClassNotFoundException, SQLException {
+
+        getConnection();
+        getData();
+        String insertQuery;
+        insertQuery = "insert into student_table(name,rollno,branch,email) values( '" + name + "', '" + rollno + "','" + branch + "', '" + email + "')";
+        rowsupdated = dataRequest.executeUpdate(insertQuery);
+        if (rowsupdated == 0) {
+            System.out.println("Error in Data insertion");
+        } else {
+            System.out.println(" Data insertion Success");
+        }
+
+    }
+
+    public void displayStudentData() throws ClassNotFoundException, SQLException {
+        getConnection();
+        String searchQuery;
+        searchQuery = "select *from student_table";
+        PreparedStatement stmt = con.prepareStatement(searchQuery);
+        results = stmt.executeQuery();
+        if (results.next()) {
+            do {
+                System.out.println("Name   : " + results.getString("name") + "   " + "Roll No: " + results.getString("rollno") + "   " + "Branch : " + "   " + results.getString("branch") + "   " + "Email  : " + results.getString("email"));
+                System.out.println("--------------------------------");
+            } while (results.next());
+        } else {
+            System.out.println("No Data Found!!");
+        }
+    }
+
+   public static void main(String[] args) throws ClassNotFoundException, SQLException {
+        java j = new java();
+        int ch;
+        System.out.println("Enter your choice");
+        Scanner sc = new Scanner(System.in);
+        ch = sc.nextInt();
+        switch (ch) {
+            case 1:  //j.getConnection();
+                //j.getData();
+                j.insertData();
+                break;
+            case 2: //j.getConnection();
+                j.displayStudentData();
+                break;
+            case 3: //j.getConnection();
+                j.searchData();
+                break;
+            default:
+                System.out.println("not a valid choice");
+        }
+        
+   }    
+      </value>
+  </data>
+  <data name="rchjava_con.Text" xml:space="preserve">
+    <value>                                                          Practicals
+
+1. Write a Java program to find the GCD of number.
+
+2. Write a JAVA Program to demonstrate Constructor for calculating area of rectangle.
+
+3. Write a JAVA Program to demonstrate Method Overloading.
+
+4. Write a program in Java for String handling which performs the following: 
+    i) Reverses the contents of a string given on console and 
+    ii) converts the resultant string in upper case.
+
+5. Write a JAVA Program on interfaces to calculate the area of a rectangle and triangle.
+
+6. Write a JAVA Program to Design a simple calculator using Switch Statement.
+
+7. Write a program to calculate area and perimeter of a rectangle using Super keyword.
+
+8. Write a program to sort given Strings.
+
+9. Write a java applet program to print some text.
+
+10. Write a java applet program to understand the properties of the font.
+
+11. Write a java applet program to demonstrate the drawing function 
+      (draw lines, rectangle, ellipse and circle).</value>
+  </data>
+  <data name="rchjava12.Text" xml:space="preserve">
+    <value>/** 12. Write a java applet program to demonstrate the drawing function
+            (draw lines, rectangle, ellipse and circle). **/
+
+import java.applet.Applet;
+import java.awt.*;
+public class DemoShape extends Applet
+{
+	public void paint(Graphics g)
+	{
+		g.setColor(Color.ORANGE);
+		g.fillRect(50,60,80,50);
+		g.setColor(Color.RED);
+		g.fillOval(50,150,60,60);
+		g.setColor(Color.PINK);
+		g.fillOval(50,260,80,50);
+		g.setColor(Color.BLUE);
+		g.drawLine(50,370,100,370);
+	}
+}
+&lt;html&gt;
+&lt;body&gt;
+&lt;applet code="DemoShape.class" width="300" height="400"&gt;
+&lt;/applet&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+  <data name="rchjava11.Text" xml:space="preserve">
+    <value>/** 11. Write a java applet program to understand the properties of the font. **/
+
+import java.applet.Applet;
+import java.awt.*;
+public class DemoFont extends Applet
+{
+	public void paint(Graphics g)
+	{
+		Font f=new Font("TimesRoman",Font.BOLD,50);
+		g.setFont(f);
+		g.setColor(Color.BLUE);
+		g.drawString("Applet",50,60);
+		g.drawString("Second Applet Program",50,100);
+	}
+}
+&lt;html&gt;
+&lt;body&gt;
+&lt;applet code="DemoFont.class" width="300" height="400"&gt;
+&lt;/applet&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+  <data name="rchjava10.Text" xml:space="preserve">
+    <value>/** 10. Write a java applet program to print some text. **/
+
+import java.applet.Applet;
+import java.awt.*;
+public class App1 extends Applet
+{
+	public void init()
+	{
+		setBackground(Color.RED);
+		setForeground(Color.yellow);
+	}
+	public void paint(Graphics g)
+	{
+		g.drawString("1st Applet Program",20,50);
+	}
+}
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Applet Program&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;applet code="App1.class" width="300" height="400"&gt;
+&lt;/applet&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+</root>

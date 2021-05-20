@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2A14BEF9-9722-450C-8501-B8E3B28B1AD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fortune_Infotech</RootNamespace>
+    <AssemblyName>Fortune Infotech</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ada.Designer.cs">
+      <DependentUpon>ada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cg.Designer.cs">
+      <DependentUpon>cg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cpp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cpp.Designer.cs">
+      <DependentUpon>cpp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="c_program.Designer.cs">
+      <DependentUpon>c_program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbms.Designer.cs">
+      <DependentUpon>dbms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dotnet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dotnet.Designer.cs">
+      <DependentUpon>dotnet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ds.Designer.cs">
+      <DependentUpon>ds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="html5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="html5.Designer.cs">
+      <DependentUpon>html5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="java.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="java.Designer.cs">
+      <DependentUpon>java.cs</DependentUpon>
+    </Compile>
+    <Compile Include="micropro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="micropro.Designer.cs">
+      <DependentUpon>micropro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nt.Designer.cs">
+      <DependentUpon>nt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="php.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="php.Designer.cs">
+      <DependentUpon>php.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="python.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="python.Designer.cs">
+      <DependentUpon>python.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unix.Designer.cs">
+      <DependentUpon>unix.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ada.resx">
+      <DependentUpon>ada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cg.resx">
+      <DependentUpon>cg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cpp.resx">
+      <DependentUpon>cpp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_program.resx">
+      <DependentUpon>c_program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbms.resx">
+      <DependentUpon>dbms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dotnet.resx">
+      <DependentUpon>dotnet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ds.resx">
+      <DependentUpon>ds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html5.resx">
+      <DependentUpon>html5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="java.resx">
+      <DependentUpon>java.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="micropro.resx">
+      <DependentUpon>micropro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nt.resx">
+      <DependentUpon>nt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="php.resx">
+      <DependentUpon>php.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="python.resx">
+      <DependentUpon>python.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unix.resx">
+      <DependentUpon>unix.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tumkur_University_logo.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

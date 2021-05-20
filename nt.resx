@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchnt1.Text" xml:space="preserve">
+    <value>/**  1.Write a program to find the roots of an equation f(x)=0 using Bisection method.  **/
+
+#include&lt;stdio.h&gt; 
+#include&lt;conio.h&gt; 
+#include&lt;math.h&gt; 
+#define f(x) ((x*x*x)+(4*x*x)-10) 
+#define e 0.0001 
+void main() 
+{ 
+	int i=1,n; 
+	float a,b,x,fx; 
+	printf("Enter the roots\n"); 
+	scanf("%f %f",&amp;a,&amp;b); 
+	printf("Enter the no of iterations\n"); 
+	scanf("%d",&amp;n); 
+	if((f(a)*f(b))&gt;0) 
+	{ 
+		printf("invalid roots"); 
+		return; 
+	} 
+	else 
+	{ 
+		printf("iteration\t root\t f(x)\t \n"); 
+		do 
+		{ 
+			x=(a+b)/2; 
+			fx=f(x); 
+			printf("%d\t %f\t %f\n",i,x,fx); 
+			if(fx&gt;0) 
+			{ 
+				b=x; 
+			} 
+			else 
+			{ 
+				a=x; 
+			} 
+			i++; 
+		}while((fabs(a-b)&gt;e)&amp;&amp;(i&lt;n)); 
+		if(i&lt;n) 
+		{ 
+			printf("the root is reached at %d iterations",i); 
+		} 
+		printf("the root is %f",x); 
+	} 
+}</value>
+  </data>
+  <data name="rchnt2.Text" xml:space="preserve">
+    <value>/** 2. Write a Program to find the simple/multiple roots of f(x)=0 using Newton-Raphson method. **/
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+#define f(x) (x*x*x*x)-(x)-10
+#define e 0.01
+#define df(x) (4*x*x*x)-1
+void main()
+{
+	int i=1,n;
+	float x0,x1,fx0,df0,fx1;
+	printf("enter the roots of the eqn\n");
+	scanf("%f%f",&amp;x0,&amp;x1);
+	printf("enter the no of iteration\n");
+	scanf("%d",&amp;n);
+	if((f(x0)*f(x1))&gt;0)
+	{
+	printf("invalid roots\n");
+	return;
+	}
+	else
+	{
+		printf("iteration \t root \t f(x)\n");
+		if(fabs(f(x0))&gt;fabs(f(x1)))
+		x0=x1;
+		do
+		{
+			fx0=f(x0);
+			df0=df(x0);
+			x1=x0-(fx0/df0);
+			fx1=f(x1);
+			printf("%d\t %f\t %f\n",i,x1,fx1);
+			x0=x1;
+			i++;
+		}while((fabs(fx1)&gt;e)&amp;&amp;(i&lt;=n));
+		if(i&lt;n)
+		{
+			printf("the root is reached at  %d iterations\n",i);
+		}
+		printf("the root is %f",x1);
+	}
+	getch();
+}</value>
+  </data>
+  <data name="rchnt3.Text" xml:space="preserve">
+    <value>/** 3. Write a program to find the roots of system of non-linear algebraic equations using Newton’s method. **/
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+#define e 0.001
+#define f(x,y) (x*x)+(x*y)-6
+#define g(x,y) (x*x)-(y*y)-3
+#define fx(x,y) (2*x)+y
+#define fy(x,y) x
+#define gx(x,y) 2*x
+#define gy(x,y)-(2*y)
+void main()
+{
+	float x1,y1,f,g,fx,fy,gx,gy,x2,y2;
+	int i=1,l=0;
+	printf("enter the intial value of x and y \n");
+	scanf("%f%f",&amp;x1,&amp;y1);
+	printf("iterations \t value of x \t value of y \n");
+	do
+	{
+		i++;
+		f=f(x1,y1);
+		g=g(x1,y1);
+		fx=fx(x1,y1);
+		fy=fy(x1,y1);
+		gx=gx(x1,y1);
+		gy=gy(x1,y1);
+		// printf("%f%f%f%f%f%f \n",f,g,fx,fy,gx,gy);
+		x2=x1-((f*gy)-(fy*g))/((fx*gy)-(gx*fy));
+		y2=y1-((fx*g)-(gx*f))/((fx*gy)-(gx*fy));
+		printf("%d \t \t  %f \t \t  %3f \n",i,x2,y2);
+		if((fabs(x2-x1)&lt;e)&amp;&amp;(fabs(y2-y1)&lt;e))
+		{
+			printf("the real roots are x=%f y=%f",x2,y2);
+			i=0;
+		}
+		else
+		{
+			x1=x2;
+			y1=y2;
+		}
+     	}while(i!=0);
+     	getch();			
+}
+</value>
+  </data>
+  <data name="rchnt4.Text" xml:space="preserve">
+    <value>/** 4. Write a program to find the roots of f(x)=0 using Secant method. **/
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+#define f(x) (x*x*x)+(4*x*x)-10
+#define e 0.01
+void main()
+{
+	int i,n;
+	float x0,x1,fx0,fx1,x2,fx2;
+	printf("enter the root of eqn\n");
+	scanf("%f%f",&amp;x0,&amp;x1);
+	printf("enter the no of iterations\n");
+	scanf("%d",&amp;n);
+	if((f(x0)*f(x1))&gt;0)
+	{
+		printf("invalid roots\n");
+		return;
+	}
+	else
+	{
+		printf("interations\troot\tf(x)\t\n");
+		do
+		{
+			fx0=f(x0);
+			fx1=f(x1);
+			x2=((x0*fx1)-(x1*fx0))/(fx1-fx0);
+			fx2=f(x2);
+			printf("%d\t%f\t%f\n",i,x2,fx2);
+			x0=x1;
+			x1=x2;
+			i++;
+		}while((fabs(fx2)&gt;e) &amp;&amp; (i&lt;n));
+		if(i&lt;n)
+		{
+		printf("the root is reached at %d\n",i);
+		}
+		printf("the root is %f",x2);
+	}
+	getch();
+}</value>
+  </data>
+  <data name="rchnt5.Text" xml:space="preserve">
+    <value>/** 5. Write a program to find the integral of a function using Trapezoidal rule. **/
+
+#include&lt;stdio.h&gt; 
+#include&lt;conio.h&gt; 
+#define f(x) ((1/(1+(x*x)))) 
+void main() 
+{ 
+        float a,b,sum=0,trap,x,h; 
+        int i,n; 
+        printf("Enter the lower limit and upper limits\n"); 
+        scanf("%f %f",&amp;a,&amp;b); 
+        printf("Enter the number of strips\n"); 
+        scanf("%d",&amp;n); 
+        h=(b-a)/n; 
+        printf("x\t f(x)\n"); 
+        printf("%f %f\n",a,f(a)); 
+        for(i=1;i&lt;=n;i++) 
+        { 
+                x=a+(i*h); 
+                printf("%f %f\n",x,f(x)); 
+                sum=sum+f(x); 
+        } 
+        printf("%f %f\n",b,f(b)); 
+        trap=(h/2)*(f(a)+f(b)+2*sum); 
+        printf("the value of the integral f(x) is %f",trap); 
+        getch(); 
+} </value>
+  </data>
+  <data name="rchnt6.Text" xml:space="preserve">
+    <value>/** 6.Write a program to find the integral of a function using Simpson’s 1/3rd and 3/8th rule using switch case.**/
+
+#include&lt;stdio.h&gt;
+#define f(x) (1/(1+(x*x)))
+void simpson13(float x0,float xn,int n)
+{
+	int i;
+	float h,x,osum=0,esum=0,sim13=0;
+	h=(xn-x0)/n;
+	printf("x \t f(x) \n");
+	printf("---------------------");
+	printf("%f \t %f \n",x0,f(x0));
+	for(i=1;i&lt;n;i++)
+	{
+		x=x0+(i*h);
+		printf("%f \t %f \n",x,f(x));
+		if((i%2)==0)
+		esum=esum+f(x);
+		else
+		osum=osum+f(x);
+	}
+	printf("%f \t %f",xn,f(xn));
+	sim13=(h/3)*(f(x0)+f(xn)+(4*osum)+(2*esum));
+	printf("the integral of function f(x) is %f",sim13);
+}
+void simpson38(float x0,float xn,int n)
+{
+	int i;
+	float h,x,sum3=0,sum=0,sim38=0;
+	h=(xn-x0)/n;
+	printf("x \t f(x) \n");
+	printf("--------------");
+	printf("%f \t %f \n",x0,f(x0));
+	for(i=1;i&lt;n;i++)
+	{
+		x=x0+(i*h);
+		printf("%f\t %f\n",x,f(x));
+		if((i%3)==0)
+		sum3=sum3+f(x);
+		else
+		sum=sum+f(x);
+	}
+		printf("%f \t %f",xn,f(xn));
+		sim38=((3*h)/8)*(f(x0)+f(xn)+(2*sum3)+(3*sum));
+		printf("the integral of the function f(x) is %f",sim38);
+}
+void main()
+{
+	int ch,n;
+	float x0,xn;
+	printf("enter the lower limit and upper limit");
+	scanf("%f%f",&amp;x0,&amp;xn);
+	printf("enter the number of intervals \n");
+	scanf("%d",&amp;n);
+	printf("enter your choice \n");
+	printf("1:simpson13 \n");
+	printf("2:simpson38 \n");
+	scanf("%d",&amp;ch);
+	switch(ch)
+	{
+		case 1:simpson13(x0,xn,n);break;
+		case 2:simpson38(x0,xn,n);break;
+		default:printf("invalid choice \n");
+	}
+}
+	
+</value>
+  </data>
+  <data name="rchnt7.Text" xml:space="preserve">
+    <value>/** 7. Write a program to find the integral of a function using adaptive Simpson method. **/
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+#define e 0.2
+#define f(x) 1/(x*x)
+#define maxdepth 5
+float reca (float a,float b,float c,float s)
+{
+	float s2,lm,rm,lh,rh,lsim,rsim;
+	int count=0;
+	if(maxdepth==count)
+	return s2;
+	else
+	{
+		count++;
+		lm=(a+c)/2;
+		rm=(c+b)/2;
+		lh=(c-a)/2;
+		rh=(b-c)/2;
+		lsim=(lh/3)*(f(a)+4*f(lm)+f(c));
+		rsim=(rh/3)*(f(c)+4*f(rm)+f(b));
+		s2=lsim+rsim;
+		if(fabs(s2-s)&lt;(15*e))
+		return s2;
+		else
+		return reca(a,c,lm,lsim)+reca(c,b,rm,rsim);
+	}
+}
+void main()
+{
+	float a,b,c,h,s,i;
+	printf("enter lower and upper limit \n");
+	scanf("%f%f",&amp;a,&amp;b);
+	c=(a+b)/2;
+	h=(b-a)/2;
+	s=(h/3)*(f(a)+4*f(c)+f(b));
+	i=reca(a,b,c,s);
+	printf("the integral of a function using simpson adative method is %f \n",i);
+	getch();
+}
+</value>
+  </data>
+  <data name="rchnt8.Text" xml:space="preserve">
+    <value>/** 8. Write a program to find the value of a function at a point using Lagrange’s interpolation. **/
+
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int i,j,n;
+	float sum=0,prod=1,z,x[10],y[10],a[10];
+	printf("enter the number of element in the table\n");
+	scanf("%d",&amp;n);
+	printf("enter the value of x0&amp;y0\n");
+	for(i=0;i&lt;n;i++)
+	{
+		scanf("%f%f",&amp;x[i],&amp;y[i]);
+	}
+	printf("enter the value of x to find/n");
+	scanf("%f",&amp;z);	
+	for(j=0;j&lt;n;j++)
+	{
+		prod=1;
+		for(i=0;i&lt;n;i++)
+		{
+			 if(i!=j)	
+			 prod=prod*(z-x[i]/x[j]-x[i]);
+		}
+		a[j]=prod*y[j];
+	}
+	for(i=0;i&lt;n;i++)
+	sum=sum+a[i];
+	printf("the value of f(%f)is %f/n",z,sum);
+	getch();
+}</value>
+  </data>
+  <data name="rchnt_con.Text" xml:space="preserve">
+    <value>                                                                       Practicals
+
+1. Write a program to find the roots of an equation f(x)=0 using Bisection
+   method.
+
+2. Write a Program to find the simple/multiple roots of f(x)=0 using
+   Newton-Raphson method.
+
+3. Write a program to find the roots of system of non-linear algebraic
+   equations using Newton’s method.
+
+4. Write a program to find the roots of f(x)=0 using Secant method.
+
+5. Write a program to find the integral of a function using Trapezoidal rule.
+
+6. Write a program to find the integral of a function using Simpson’s 1/3rd
+   and 3/8th rule using switch case.
+
+7. Write a program to find the integral of a function using adaptive
+   Simpson method.
+
+8. Write a program to find the value of a function at a point using
+   Lagrange’s interpolation.</value>
+  </data>
+</root>

@@ -1,0 +1,757 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchphp1.Text" xml:space="preserve">
+    <value>/** 1. Write a PHP program to find the largest of three numbers using if_else ladder. **/
+
+ &lt;?php 
+$a=10; 
+$b=200; 
+$c=30; 
+if(($a&gt;$c)&amp;&amp;($a&gt;$b)) 
+echo"$a is the largest"; 
+else if($b&gt;$c) 
+echo"$b is the largest"; 
+else 
+echo"$c is the largest"; 
+?&gt; </value>
+  </data>
+  <data name="rchphp2.Text" xml:space="preserve">
+    <value>/** 2. Write a PHP program to check whether the given number is prime or not using for loop. **/
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;form method="post"&gt;
+Enter a number:
+&lt;input type="text" name="num"&gt;
+&lt;input type="submit" name="Submit"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+if($_POST)
+{
+	$num=$_POST['num'];
+	function prime($num)
+	{
+		for($x=2;$x&lt;$num;$x++)
+		{
+			if($num%$x==0)
+			{
+				return 0;
+			}
+		}
+		return 1;
+	}
+	$a=prime($num);
+	if($a==0)
+			echo "$num is not a prime number";
+	else
+			echo "$num is prime number";
+}
+?&gt;
+
+
+</value>
+  </data>
+  <data name="rchphp3.Text" xml:space="preserve">
+    <value>/** 3. Write a PHP program to reverse a given number using while loop. **/
+
+&lt;html&gt;
+&lt;font face=Consolas size=30 color=red&gt;
+&lt;?php
+$num=156;
+$revnum=0;
+echo "The given number is $num &lt;br /&gt;";
+while($num&gt;1)
+{
+	$rem=$num%10;
+	$revnum=($revnum*10)+$rem;
+	$num=($num/10);
+}
+echo "Reverse number is $revnum";
+?&gt;	
+&lt;/font&gt;
+&lt;/html&gt;
+</value>
+  </data>
+  <data name="rchphp4.Text" xml:space="preserve">
+    <value>/** 4. Write a PHP program to print the Fibonacci series using functions. **/
+
+&lt;?php
+echo ("&lt;h2&gt;Fibonacci Series&lt;/h2&gt;");
+function fib($n)
+{
+	$f1=0;
+	$f2=1;
+	print "Fibonacci series &lt;br /&gt;";
+	echo "$f1&lt;br /&gt;$f2&lt;br /&gt;";
+	for($i=2;$i&lt;$n;$i++)
+	{
+		$f3=$f1+$f2;
+		echo "$f3&lt;br /&gt;";
+		$f1=$f2;
+		$f2=$f3;
+	}
+}
+print fib(5);
+?&gt;</value>
+  </data>
+  <data name="rchphp5.Text" xml:space="preserve">
+    <value>/** 5. Write a PHP program to illustrate different string functions. **/
+
+&lt;?php
+$str1="PHP is a SCRIPTING Language";
+$str2=" Different String Functions ";
+echo "The String1 is $str1";
+echo "&lt;br /&gt;The length of the string1 is ".strlen($str1);
+echo "&lt;br /&gt;The length of the string2 is ".strlen($str2);
+echo "&lt;br /&gt;After trimming string2 is ".strlen(trim($str2));
+echo "&lt;br /&gt;Number of words in the string1 is ".str_word_count($str1);
+echo "&lt;br /&gt;The reverse of the string1 is ".strrev($str1);
+echo "&lt;br /&gt;String1 is in Lower case ".strtolower($str1);
+echo "&lt;br /&gt;String1 is in Lower case ".strtoupper($str1);
+echo "&lt;br /&gt;After replace php to java is ".str_replace("PHP","Java",$str1);
+echo "&lt;br /&gt;Sub string of string1 is ".substr($str1,19,27);
+echo "&lt;br /&gt;The language is present at ".strpos($str1,'Language')." position";
+?&gt;	
+</value>
+  </data>
+  <data name="rchphp6.Text" xml:space="preserve">
+    <value>/** 6. Write a PHP program to implement calculator using switch case. **/
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;form method="POST"&gt;
+&lt;h2&gt;First Number:&lt;/h2&gt;&lt;input type="text" name="num1"&gt;
+&lt;h2&gt;Second Number:&lt;/h2&gt;&lt;input type="text" name="num2"&gt;
+&lt;h2&gt;Enter Operator&lt;/h2&gt;
+&lt;select name="operator"&gt;
+&lt;option&gt;+&lt;/option&gt;
+&lt;option&gt;-&lt;/option&gt;
+&lt;option&gt;*&lt;/option&gt;
+&lt;option&gt;/&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type="submit" name="sbt" value="Submit"&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;?php
+if(isset($_POST["sbt"]))
+{
+	$n1=$_POST['num1'];
+	$n2=$_POST['num2'];
+	$cal=$_POST['operator'];
+	switch("$cal")
+	{
+		case "+"; 
+		$result=$n1+$n2;
+		echo "Addition of $n1 and $n2=$result";
+		break;
+		case "-"; 
+		$result=$n1-$n2;
+		echo "Subraction of $n1 and $n2=$result";
+		break;
+		case "*"; 
+		$result=$n1*$n2;
+		echo "Multiplication of $n1 and $n2=$result";
+		break;
+		case "/"; 
+		$result=$n1/$n2;
+		echo "Division of $n1 and $n2=$result";
+		break;
+	}
+}	
+?&gt;	
+</value>
+  </data>
+  <data name="rchphp7.Text" xml:space="preserve">
+    <value>/** 7. Write a PHP program to find factorial of a number using for each loop. **/
+
+&lt;?php
+$n=4;
+$fact=1;
+$a=range(1,$n);
+foreach($a as $val)
+{
+	$fact=$fact*$val;
+}
+echo "The Factorial of $n is $fact";
+?&gt;
+</value>
+  </data>
+  <data name="rchphp8.Text" xml:space="preserve">
+    <value>/** 8. Write a PHP program to sort the given array. **/
+
+&lt;?php
+$cars=array("volvo","bmw","toyoto","xyz");
+sort($cars);
+for($i=0;$i&lt;count($cars);$i++)
+	echo "$cars[$i]&lt;br /&gt;";
+?&gt;
+Or
+&lt;?php
+$a=array(3,7,4,6,5);
+echo "The given array is &lt;br /&gt;";
+foreach($a as $val)
+echo "$val &lt;br /&gt;";
+for($i=0;$i&lt;count($a);$i++)
+{
+	for($j=0;$j&lt;=count($a)-1;$j++)
+	{
+		if($a[$i]&lt;$a[$j])
+		{
+			$temp=$a[$i];
+			$a[$i]=$a[$j];
+			$a[$j]=$temp;
+		}
+	}
+}
+echo "The sorted array is &lt;br /&gt;";
+for($i=0;$i&lt;count($a);$i++)
+	echo "$a[$i]&lt;br /&gt;";
+?&gt;
+</value>
+  </data>
+  <data name="rchphp9.Text" xml:space="preserve">
+    <value>9. Write a PHP program to create and manage a database using SQL commands.
+
+&lt;?php
+$con=mysqli_connect("localhost","root","","sdc");
+$sql1="create table student(id int(10),name varchar(20))";
+if($con-&gt;query($sql1)===true)
+{
+	echo "Table created successfully";
+}
+$sql2="insert into student(id,name)values('101','madhu')";
+if($con-&gt;query($sql2)===true)
+{
+	echo "Record insered successfully";
+}
+$sql3="select id,name from student";
+$result=$con-&gt;query($sql3);
+if($result-&gt;num_rows&gt;0)
+{
+	while($row=$result-&gt;fetch_assoc())
+	{
+		echo "id:".$row["id"]."Name:".$row["name"]"&lt;br&gt;";
+	}
+}
+$sql4="insert into student(id,name)values('102','karthik')";
+$con-&gt;query($sql4);
+?&gt;
+</value>
+  </data>
+  <data name="rchphp10.Text" xml:space="preserve">
+    <value>/** 10. Write a PHP program to create and validate a email id. **/
+
+&lt;?php
+$email="sdctmk@gmail.com";
+if(preg_match("/^[a-zA-Z0-9,_-]+@[a-zA-Z0-9_]+\.[a-zA-z.]{2,5}$/",$email))
+{
+	echo "$email is valid";
+}
+else
+{
+	echo "$email is not valid";
+}
+?&gt;
+Or
+&lt;?php
+$email="sdctmk@gmail.com";
+if(filter_var($email,FILTER_VALIDATE_EMAIL))
+{
+	echo "$email is valid";
+}
+else
+{
+	echo "$email is not valid";
+}
+?&gt;
+</value>
+  </data>
+  <data name="rchphp11.Text" xml:space="preserve">
+    <value>/** 11. Using PHP and SQL, create and validate a sample login form. **/
+
+&lt;?php
+$con=mysqli_connect("localhost","root","","register");
+if(!$con)
+{
+	echo "Not connected";
+}
+$name=$_POST['name'];
+$place=$_POST['place'];
+$sql="insert into loginpg(name,place)values('$name','$place')";
+if(mysqli_query($con,$sql))
+{
+	echo "Inserted";
+}
+else
+{
+	echo "Not Inserted";
+}
+?&gt;
+&lt;html&gt;
+&lt;body bgcolor="pink"&gt;
+&lt;form method="post" action="lab11.php" target="_self"&gt;
+&lt;center&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+Enter name:
+&lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+Enter place:
+&lt;input type="text" name="place"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" name="submit"&gt;&lt;br&gt;&lt;br&gt;	
+    &lt;/center&gt;
+    &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</value>
+  </data>
+  <data name="rchphp12.Text" xml:space="preserve">
+    <value>/** 12. Using PHP and SQL, develop a program to accept student informationviz. 
+      Accession name, regno, course, sem, marks in 3 subjects from a web page and store the information
+      in a database and to calculate total and average and to display the results with proper headings.  **/
+
+
+// Save the below code in .html extension
+
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;form method="POST" action="stu_data.php"&gt;
+
+&lt;table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2"&gt;
+
+&lt;tr&gt;
+&lt;td colspan=2&gt;
+&lt;center&gt;&lt;font size=4&gt;&lt;b&gt;Student Registration Form&lt;/b&gt;&lt;/font&gt;&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Name&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=textnames id="textname" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Register Number&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="regno" id="regno" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Course&lt;/td&gt;
+&lt;td&gt;&lt;select name="Course"&gt;
+&lt;option value="-1" selected&gt;select..&lt;/option&gt;
+&lt;option value="BCA"&gt;BCA&lt;/option&gt;
+&lt;option value="BCOM"&gt;BCOM&lt;/option&gt;
+&lt;option value="BBM"&gt;BBM&lt;/option&gt;
+&lt;/select&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Semester&lt;/td&gt;
+&lt;td&gt;&lt;select name="Semester"&gt;
+&lt;option value="-1" selected&gt;select..&lt;/option&gt;
+&lt;option value="1"&gt;1&lt;/option&gt;
+&lt;option value="2"&gt;2&lt;/option&gt;
+&lt;option value="3"&gt;3&lt;/option&gt;
+&lt;option value="4"&gt;4&lt;/option&gt;
+&lt;option value="5"&gt;5&lt;/option&gt;
+&lt;option value="6"&gt;6&lt;/option&gt;
+&lt;/select&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Subject 1 Marks&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="sub1" id="sub1" size="30"&gt;&lt;/td&gt;
+
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subject 2 Marks&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="sub2" id="sub2" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Subject 3 Marks&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="sub3" id="sub3" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;input type="reset"&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;input type="submit" value="submit" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+//Creating a table
+*****************************************************************************************************************
+--------- Here "Db_Student" is the database and "Student" is the table in the database "Db_Student"--------
+*****************************************************************************************************************
+
+CREATE TABLE `Db_Student`.`Student` 
+( 
+	`name` TEXT NOT NULL ,
+	`regno` VARCHAR(12) NOT NULL ,	
+	`crs` TEXT NOT NULL , 
+	`sem` INT(5) NOT NULL ,
+	`sub1` INT(5) NOT NULL ,
+	`sub2` INT(5) NOT NULL ,
+	`sub3` INT(5) NOT NULL , 
+	`total` INT(5) NOT NULL ,
+	`avg` INT(5) NOT NULL 
+) 
+ENGINE = InnoDB;
+
+
+//Save the below code in "stu_data.php" extension
+
+&lt;?php
+$con=mysqli_connect("localhost","root","","db_student");
+if(!$con)
+{
+	echo "Server not connected";
+}
+$name=$_POST['textnames'];
+$regno=$_POST['regno'];
+$crs=$_POST['Course'];
+$sem=$_POST['Semester'];
+$sub1=$_POST['sub1'];
+$sub2=$_POST['sub2'];
+$sub3=$_POST['sub3'];
+$total=$sub1+$sub2+$sub3;
+$avg=$total/3;
+
+$qry="insert into student values('$name','$regno','$crs','$sem','$sub1','$sub2','$sub3','$total','$avg')";
+
+if(mysqli_query($con,$qry))
+{
+	echo "Student registered Successfully";
+	$qry1="select regno,name from student";
+	$result=$con-&gt;query($qry1);
+
+	if($result-&gt;num_rows&gt;0)
+	{
+		echo "&lt;h1&gt; Student Information &lt;/h1&gt;";
+		$res=mysqli_query($con,"select * from student");
+		echo "&lt;table border='1' align=center width=100%&gt;";
+		echo "&lt;tr color='red'&gt;
+	      &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Reg.No&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+	      &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Course&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Semester&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Subject 1&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Subject 2&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Subject 3&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Total&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Avg. Marks&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		 &lt;/tr&gt;";
+		while($arr=mysqli_fetch_row($res))
+			echo "&lt;tr&gt;	
+			&lt;td align=center&gt;&lt;/br&gt;$arr[0]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[1]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[2]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[3]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[4]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[5]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[6]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[7]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[8]&lt;/td&gt;
+			&lt;/tr&gt;";
+			echo "&lt;/table&gt;";
+	}
+}
+?&gt;</value>
+  </data>
+  <data name="rchphp13.Text" xml:space="preserve">
+    <value>/** 13. Using PHP and SQL, develop a program to accept employee information viz. 
+      Accession name, empno and basic from a web page and store the Information in a database and
+      to calculate DA, HRA, Pf, TAX, Gross and net payand to display the details with proper headings. **/
+
+//Save the below code in .html extension
+
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;form method="POST" action="emp_data.php"&gt;
+
+&lt;table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+cellspacing="2"&gt;
+
+&lt;tr&gt;
+&lt;td colspan=2&gt;
+&lt;center&gt;&lt;font size=4&gt;&lt;b&gt;Employee Info Form&lt;/b&gt;&lt;/font&gt;&lt;/center&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Name&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name="textnames" id="textname" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Employee-Id Number&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="empid" id="empid" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Basic Salary&lt;/td&gt;
+&lt;td&gt;&lt;input type="text" name="bsal" id="bsal" size="30"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;input type="reset"&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;input type="submit" value="submit" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;/table&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+//Creating a table
+*****************************************************************************************************************
+--------- Here "db_Employee" is the database and "Employee" is the table in the database "db_Employee"--------
+*****************************************************************************************************************
+
+CREATE TABLE `db_Employee`.`Employee` 
+(
+	`name` TEXT NOT NULL ,
+	`empid` VARCHAR(20) NOT NULL , 
+	`bsal` BIGINT(20) NOT NULL ,
+	`da` BIGINT(20) NOT NULL ,
+	`hra` BIGINT(20) NOT NULL , 
+	`pf` BIGINT(20) NOT NULL ,
+	`tax` BIGINT(20) NOT NULL , 
+	`gross` BIGINT(20) NOT NULL ,
+	`net` BIGINT(20) NOT NULL
+ )
+ENGINE = InnoDB;
+
+//Save the below code as "emp_data.php"
+
+&lt;?php
+$con=mysqli_connect("localhost","root","","db_employee");
+if(!$con)
+{
+	echo "Server not connected";
+}
+$name=$_POST['textnames'];
+$empid=$_POST['empid'];
+$bsal=$_POST['bsal'];
+$da=$bsal/100*7;
+$hra=$bsal/100*40;
+$pf=$bsal/100*12;
+$salanum=($bsal*12);
+if($salanum&lt;250000)
+{
+	$tax=0;
+}
+else if(($salanum&gt;250000)&amp;&amp;($salanum&lt;500000))
+{
+	$tax=($salanum/100*5)/12;
+}
+else if(($salanum&gt;500000)&amp;&amp;($salanum&lt;1000000))
+{
+	$tax=($salanum/100*20)/12;
+}
+else
+{
+	$tax=($salanum/100*30)/12;
+}
+$gross=$bsal+$hra+$da;
+$net=($bsal+$hra+$da)-$pf;
+
+$qry="insert into employee values('$name','$empid','$bsal','$da','$hra','$pf','$tax','$gross','$net')";
+
+if(mysqli_query($con,$qry))
+{
+	echo "Insertion Successfully";
+	$qry1="select empid from employee";
+	$result=$con-&gt;query($qry1);
+
+	if($result-&gt;num_rows&gt;0)
+	{
+		echo "&lt;h1&gt; Salary Statement &lt;/h1&gt;";
+		$res=mysqli_query($con,"select * from employee");
+		echo "&lt;table border='1' align=center width=100%&gt;";
+		echo "&lt;tr color='red'&gt;
+	      &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Emp.Id&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+	      &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;Basic&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;DA&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;HRA&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;PF&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;TAX&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;GROSS&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		  &lt;th width=15% align=center&gt;&lt;/br&gt;&lt;/br&gt;&lt;u&gt;&lt;b&gt;NET&lt;/b&gt;&lt;/u&gt;&lt;/th&gt;
+		 &lt;/tr&gt;";
+		while($arr=mysqli_fetch_row($res))
+			echo "&lt;tr&gt;	
+			&lt;td align=center&gt;&lt;/br&gt;$arr[0]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[1]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[2]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[3]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[4]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[5]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[6]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[7]&lt;/td&gt;
+			&lt;td align=center&gt;&lt;/br&gt;$arr[8]&lt;/td&gt;
+			&lt;/tr&gt;";
+			echo "&lt;/table&gt;";
+	}
+}
+?&gt;</value>
+  </data>
+  <data name="rchphp_con.Text" xml:space="preserve">
+    <value>                                                                 Practicals
+
+1. Write a PHP program to find the largest of three numbers using if_else ladder.
+
+2. Write a PHP program to check whether the given number is prime or not using for loop.
+
+3. Write a PHP program to reverse a given number using while loop.
+
+4. Write a PHP program to print the Fibonacci series using functions.
+
+5. Write a PHP program to illustrate different string functions.
+
+6. Write a PHP program to implement calculator using switch case.
+
+7. Write a PHP program to find factorial of a number using for each loop.
+
+8. Write a PHP program to sort the given array.
+
+9. Write a PHP program to create and manage a database using SQL commands.
+
+10. Write a PHP program to create and validate a email id.
+
+11. Using PHP and SQL, create and validate a sample login form.
+
+12. Using PHP and SQL, develop a program to accept student informationviz. 
+      Accession name, regno, course, sem, marks in 3 subjects from a web page and store the information
+      in a database and to calculate total and average and to display the results with proper headings. 
+
+13. Using PHP and SQL, develop a program to accept employee information viz. 
+      Accession name, empno and basic from a web page and store the Information in a database and
+      to calculate DA, HRA, Pf, TAX, Gross and net payand to display the details with proper headings. </value>
+  </data>
+</root>

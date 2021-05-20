@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchada1.Text" xml:space="preserve">
+    <value>/** 1. Write a C++ program to implementation of Binary Search. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int binary(int a[],int low,int high,int key);
+void main()
+{
+	int key,n,a[10],i;
+	clrscr();
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	cout&lt;&lt;"Enter the key elements: ";
+	cin&gt;&gt;key;
+	int pos;
+	pos=binary(a,0,n-1,key);
+	if(pos==-1)
+	cout&lt;&lt;"Key not found";
+	else
+	cout&lt;&lt;"Found at location: "&lt;&lt;pos;
+	getch();
+}
+int binary(int a[],int low,int high,int key)
+{
+	int mid;
+	while(low&lt;=high)
+	{
+		mid=(low+high)/2;
+		if(key==a[mid])
+		return(mid+1);
+		else if(key&lt;a[mid])
+		return binary(a,low,mid,key);
+		else
+		return binary(a,mid+1,high,key);
+	}
+	return(-1);
+}</value>
+  </data>
+  <data name="rchada2.Text" xml:space="preserve">
+    <value>/** 2. Write a C++ program to implementation of linear search. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int a[10],i,n,key;
+	clrscr();
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	cout&lt;&lt;"Enter the key element: ";
+	cin&gt;&gt;key;
+	for(i=0;i&lt;n;i++)
+	{
+		if(key==a[i])
+		{
+			cout&lt;&lt;"Found at location "&lt;&lt;(i+1);
+			break;
+		}
+	}
+	if(i==n)
+	cout&lt;&lt;"Not found";
+	getch();
+}</value>
+  </data>
+  <data name="rchada3.Text" xml:space="preserve">
+    <value>/** 3. Write a C++ program to find GCD &amp; Factorial using recursion technique. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int gcd(int n1,int n2);
+int fact(int n);
+void main()
+{
+	int n,n1,n2,ch;
+	clrscr();
+	cout&lt;&lt;"1.GCD";
+	cout&lt;&lt;"2.FACT";
+	cout&lt;&lt;"Enter your choice: ";
+	cin&gt;&gt;ch;
+	switch(ch)
+	{
+		case 1: cout&lt;&lt;"Enter two numbers: ";
+			cin&gt;&gt;n1&gt;&gt;n2;
+			cout&lt;&lt;"GCD: "&lt;&lt;gcd(n1,n2);
+			break;
+		case 2:cout&lt;&lt;"Enter a number: ";
+			cin&gt;&gt;n;
+			cout&lt;&lt;"Fact: "&lt;&lt;fact(n);
+			break;
+		default:cout&lt;&lt;"Invalid Input";
+	}
+}
+int gcd(int n1,int n2)
+{
+	if(n2==0)
+	return(n1);
+	if(n1&lt;n2)
+	return gcd(n2,n1);
+	else
+	return(n2,n1%n2);
+}
+int fact(int n)
+{
+	if(n==0)
+	return(1);
+	else
+	return(n*fact(n-1));
+}</value>
+  </data>
+  <data name="rchada4.Text" xml:space="preserve">
+    <value>/** 4. Write a C++ program to implementation of Bubble sort. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int a[10],i,j,n,temp;
+	clrscr();
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	cout&lt;&lt;"Before Sorting: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	for(i=0;i&lt;n-1;i++)
+	{
+		for(j=0;j&lt;n-i-1;j++)
+		{
+			if(a[j]&gt;a[j+1])
+			{
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
+			}
+		}
+	}
+	cout&lt;&lt;endl&lt;&lt;"After Sorting: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	getch();
+}</value>
+  </data>
+  <data name="rchada5.Text" xml:space="preserve">
+    <value>/** 5. Write a C++ program to implementation of Selection sort. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int a[10],i,j,n,temp;
+	clrscr();
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elemnts: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	cout&lt;&lt;"Before Sorting: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	for(i=0;i&lt;n;i++)
+	{
+		for(j=i+1;j&lt;n;j++)
+		{
+			if(a[i]&gt;a[j])
+			{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+			}
+		}
+	}
+	cout&lt;&lt;"After Sorting: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	getch();
+}</value>
+  </data>
+  <data name="rchada6.Text" xml:space="preserve">
+    <value>/** 6. Write a C++ program to implementation of insertion sort. **/
+
+a#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int a[10],i,n,j,temp;
+	clrscr();
+	cout&lt;&lt;"Enter number ofthe array elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	cout&lt;&lt;"Before Sorintg: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	for(i=1;i&lt;n;i++)
+	{
+		for(j=i;j&gt;=1;j--)
+		{
+			if(a[j]&lt;a[j-1])
+			{
+				temp=a[j];
+				a[j]=a[j-1];
+				a[j-1]=temp;
+			}
+		}
+	}
+	cout&lt;&lt;"After Sorting: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	getch();
+}</value>
+  </data>
+  <data name="rchada7.Text" xml:space="preserve">
+    <value>/** 7. Write a C++ program to implementation of quick sort. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int part(int a[],int low,int high);
+void quick(int a[],int low,int high)
+{
+	int i;
+	if(low&lt;high)
+	{
+		i=part(a,low,high);
+		quick(a,low,i-1);
+		quick(a,i+1,high);
+	}
+}
+int part(int a[],int low,int high)
+{
+	int piv,i,j,temp,key;
+	i=low+1;
+	piv=a[low];
+	j=high;
+	while(1)
+	{
+		while((i&lt;high)&amp;&amp;(piv&gt;=a[j]))
+		i++;
+		while((piv&lt;a[j])&amp;&amp;(j&gt;low))
+		j--;
+		if(i&lt;j)
+		{
+			temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+		}
+		else
+		{
+			a[low]=a[j];
+			a[j]=piv;
+			break;
+		}
+	}
+	return(j);
+}
+
+void main()
+{
+	clrscr();
+	int a[10],i,n;
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	quick(a,0,n-1);
+	cout&lt;&lt;"Sorted array: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	getch();
+}</value>
+  </data>
+  <data name="rchada8.Text" xml:space="preserve">
+    <value>/** 8. Write a C++ program to implementation of shell sort. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int n,i,j,k,a[20],temp;
+	clrscr();
+	cout&lt;&lt;"Enter the number of elements: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the array elements: ";
+	for(i=0;i&lt;n;i++)
+	cin&gt;&gt;a[i];
+	for(i=n/2;i&gt;0;i=i/2)
+	{
+		for(j=1;j&lt;n;j++)
+		{
+			for(k=j-i;k&gt;=0;k=k-i)
+			{
+				if(a[k]&gt;a[k+i])
+				{
+					temp=a[k];
+					a[k]=a[k+i];
+					a[k+i]=temp;
+				}
+			}
+		}
+	}
+	cout&lt;&lt;"Sorted array: ";
+	for(i=0;i&lt;n;i++)
+	cout&lt;&lt;a[i]&lt;&lt;" ";
+	getch();
+}</value>
+  </data>
+  <data name="rchada9.Text" xml:space="preserve">
+    <value>/** 9. Write a program to from a given vertex in a weighted connected graph, find shortest paths to other 
+           vertices using Dijkstra's algorithm. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int dij(int n,int s,int cost[10][10],int dist[]);
+void main()
+{
+	int dist[10],cost[10][10],i,j,n,s;
+	clrscr();
+	cout&lt;&lt;"Enter the number of verticies: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the cost adjacecny matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	{
+		cin&gt;&gt;cost[i][j];
+		if(cost[i][j]==0)
+		cost[i][j]=999;
+	}
+	cout&lt;&lt;"Enter the source vertex: ";
+	cin&gt;&gt;s;
+	dij(n,s,cost,dist);
+	for(i=1;i&lt;=n;i++)
+	if(i!=s)
+	cout&lt;&lt;s&lt;&lt;"-&gt;"&lt;&lt;i&lt;&lt;"="&lt;&lt;dist[i]&lt;&lt;endl;
+	getch();
+}
+int dij(int n,int s,int cost[10][10],int dist[])
+{
+	int i,v,count,w,visit[10],min;
+	for(i=1;i&lt;=n;i++)
+	{
+		visit[i]=0;
+		dist[i]=cost[s][i];
+	}
+	count=1;
+	while(count&lt;n)
+	{
+		min=999;
+		for(w=1;w&lt;=n;w++)
+		{
+			if(dist[w]&lt;min&amp;&amp;visit[w]==0)
+			{
+				min=dist[w];
+				v=w;
+			}
+			visit[v]=1;
+			count++;
+			if((dist[w]&gt;dist[v]+cost[v][w])&amp;&amp;(visit[w]==0))
+			dist[w]=dist[v]+cost[v][w];
+		}
+	}
+}</value>
+  </data>
+  <data name="rchada10.Text" xml:space="preserve">
+    <value>/** 10. Write a program to find Minimum Cost Spanning Tree of a given undirected graph using 
+             Kruskal's algorithm. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int a[20][20],n,k=0,parent[50];
+void kruskal();
+int findcycle(int p);
+void main()
+{
+	clrscr();
+	int i,j;
+	cout&lt;&lt;"\n Enter the no of vertices: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"\n Enter the adjacency matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	cin&gt;&gt;a[i][j];
+	kruskal();
+	getch();
+}
+void kruskal()
+{
+	int p,q,x,y,cost=0,i,j,mincost=0;
+	while(k&lt;(n-1))
+	{
+		for(i=1;i&lt;=n;i++)
+		for(j=1;j&lt;=n;j++)
+		if(a[i][j]!=0&amp;&amp;(a[i][j]&lt;cost||cost==0))
+		{ 
+			cost=a[i][j];
+			p=i;
+			q=j;
+		}
+		a[p][q]=a[q][p]=0;
+		x=findcycle(p);
+		y=findcycle(q);
+		if(x!=y)
+		{
+			cout&lt;&lt;"\n"&lt;&lt;p&lt;&lt;","&lt;&lt;q&lt;&lt;","&lt;&lt;cost;
+			mincost=mincost+cost;
+			k++;
+		}
+		parent[q]=p;
+		cost=0;
+	}
+	cout&lt;&lt;"\n............";
+	cout&lt;&lt;"\n mincost="&lt;&lt;mincost;
+}
+int findcycle(int p)
+{
+	while(parent[p]&gt;0)
+	p=parent[p];
+	return(p);
+}</value>
+  </data>
+  <data name="rchada11.Text" xml:space="preserve">
+    <value>/** 11. Write a program to print all the nodes reachable from a given starting node in a digraph using 
+            BFS method. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+int a[10][10],q[10]={0},visited[10]={0},n,i,j,f=0,r=0;
+void bfs(int v)
+{
+	visited[v]=1;
+	cout&lt;&lt;v;
+	while(f&lt;=r)
+	{
+		for(i=1;i&lt;=n;i++)
+		{
+			if((a[v][i]==1)&amp;&amp;(visited[i]==0))
+			{
+				q[r++]=i;
+				visited[i]=1;
+				cout&lt;&lt;i&lt;&lt;" ";
+			}
+		}
+		v=q[f++];
+	}
+}
+void main()
+{
+	clrscr();
+	int v;
+	cout&lt;&lt;"Enter the number of verticies: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the cost adajcency matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	cin&gt;&gt;a[i][j];
+	cout&lt;&lt;"Enter the starting vertex: ";
+	cin&gt;&gt;v;
+	bfs(v);
+	getch();
+}
+
+</value>
+  </data>
+  <data name="rchada12.Text" xml:space="preserve">
+    <value>/** 12. Write a program to check whether a given graph is connected or not using  DFS method. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void dfs(int s);
+int a[10][10],visited[10]={0},n;
+void main()
+{
+	int i,j,s;
+	cout&lt;&lt;"Enter the number of vertex: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter cost adjacency matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	cin&gt;&gt;a[i][j];
+	cout&lt;&lt;"Enter the source vertex: ";
+	cin&gt;&gt;s;
+	dfs(s);
+}
+void dfs(int s)
+{
+	int stack[10],top=-1,pop,i;
+	top++;
+	stack[top]=s;
+	while(top&gt;=0)
+	{
+		pop=stack[top];
+		top--;
+		if(visited[pop]==0)
+		{
+			cout&lt;&lt;pop&lt;&lt;" ";
+			visited[pop]=1;
+		}
+		for(i=n;i&gt;=1;i--)
+		{
+			if((a[pop][i]==1)&amp;&amp;(visited[i]==0))
+			{
+				top++;
+				stack[top]=i;
+			}
+		}
+	}
+}</value>
+  </data>
+  <data name="rchada13.Text" xml:space="preserve">
+    <value>/** 13. Write a program to find Minimum Cost Spanning Tree of a given undirected graph using 
+            Prim’s algorithm. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int ne=1,n,min,vis[10]={0},cost[10][10],i,j,u,v,mincost=0;
+	clrscr();
+	cout&lt;&lt;"Enter the number of edges: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the cost adjacency matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	{
+		cin&gt;&gt;cost[i][j];
+		if(cost[i][j]==0)
+		cost[i][j]=999;
+	}
+	vis[1]=1;
+	while(ne&lt;n)
+	{
+		min=999;
+		for(i=1;i&lt;=n;i++)
+		for(j=1;j&lt;=n;j++)
+		if((vis[i]==1)&amp;&amp;(cost[i][j]&lt;min))
+		{
+			min=cost[i][j];
+			u=i; //u=row
+			v=j; //v=column
+		}
+		if(vis[v]==0)
+		{
+			cout&lt;&lt;u&lt;&lt;"-&gt;"&lt;&lt;v&lt;&lt;"="&lt;&lt;min&lt;&lt;endl;
+			ne++;
+			mincost=mincost+min;
+			vis[v]=1;
+		}
+		cost[u][v]=cost[v][u]=999;
+	}
+	cout&lt;&lt;"Minimum cost = "&lt;&lt;mincost;
+	getch();
+}</value>
+  </data>
+  <data name="rchada14.Text" xml:space="preserve">
+    <value>/** 14. Write a program to implement Floyd’s algorithm for the All-Pairs-Shortest-Paths problem. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int n,i,j,k,d[10][10];
+	clrscr();
+	cout&lt;&lt;"Enter the number of vertex: ";
+	cin&gt;&gt;n;
+	cout&lt;&lt;"Enter the adjacency matrix: ";
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	{
+		cin&gt;&gt;d[i][j];
+		if((d[i][j]==0)&amp;&amp;(i!=j))
+		d[i][j]=999;
+	}
+	for(k=1;k&lt;=n;k++)
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	if(d[i][j]&gt;(d[i][k]+d[k][j]))
+	d[i][j]=d[i][k]+d[k][j];
+	for(i=1;i&lt;=n;i++)
+	for(j=1;j&lt;=n;j++)
+	cout&lt;&lt;i&lt;&lt;"-&gt;"&lt;&lt;j&lt;&lt;"="&lt;&lt;d[i][j]&lt;&lt;endl;
+	getch();
+}</value>
+  </data>
+  <data name="rchada15.Text" xml:space="preserve">
+    <value>/** 15. Write a program to implement N Queen's problem using Back Tracking. **/
+
+#include&lt;iostream.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;math.h&gt;
+int x[30],count=0;
+int place(int k,int pos)
+{
+	for(int j=1;j&lt;k;j++)
+	{
+		if((x[j]==pos)||(abs(x[j]-pos)==abs(j-k)))
+		return 0;
+	}
+	return 1;
+}
+void printsol(int n)
+{
+	int i,j;
+	count++;
+	cout&lt;&lt;"-----------------\n";
+	for(i=1;i&lt;=n;i++)
+	{
+		for(j=1;j&lt;=n;j++)
+		(x[i]==j)?cout&lt;&lt;" Q ":cout&lt;&lt;" * ";
+		cout&lt;&lt;endl;
+	}
+}
+void queen(int k,int n)
+{
+	for(int i=1;i&lt;=n;i++)
+	if(place(k,i))
+	{
+		x[k]=i;
+		(k==n)?printsol(n):queen(k+1,n);
+	}
+}
+void main()
+{
+	int n;
+	cout&lt;&lt;"Enter the number of queens: ";
+	cin&gt;&gt;n;
+	queen(1,n);
+}</value>
+  </data>
+  <data name="rchada_con.Text" xml:space="preserve">
+    <value>                                                           Practicals
+
+1. Write a C++ program to implementation of Binary Search.
+
+2. Write a C++ program to implementation of linear search.
+
+3. Write a C++ program to find GCD &amp; Factorial using recursion technique.
+
+4. Write a C++ program to implementation of Bubble sort.
+
+5. Write a C++ program to implementation of Selection sort.
+
+6. Write a C++ program to implementation of insertion sort.
+
+7. Write a C++ program to implementation of quick sort.
+
+8. Write a C++ program to implementation of shell sort.
+
+9. Write a program to from a given vertex in a weighted connected graph, find shortest paths to other vertices 
+     using Dijkstra's algorithm.
+
+10. Write a program to find Minimum Cost Spanning Tree of a given undirected graph using 
+      Kruskal's algorithm.
+
+11. Write a program to print all the nodes reachable from a given starting node in a digraph using BFS method.
+
+12. Write a program to check whether a given graph is connected or not using DFS method.
+
+13. Write a program to find Minimum Cost Spanning Tree of a given undirected graph using Prim’s algorithm.
+
+14. Write a program to implement Floyd’s algorithm for the All-Pairs-Shortest-Paths problem.
+
+15. Write a program to implement N Queen's problem using Back Tracking.</value>
+  </data>
+  <metadata name="printDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="printDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>158, 17</value>
+  </metadata>
+</root>

@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchpy1.Text" xml:space="preserve">
+    <value>#  1. Program to convert the given temperature from Fahrenheit to Celsius and vice versa depending upon 
+#      user’s choice.
+
+c= int(input("enter temparature in  Celsius "))
+f= (c*1.8)+32
+print("Fahrenheit=",f)
+f= int(input("enter temparature in fahrenheit  "))
+c= (f-32)/1.8
+print("Celsius=",c)</value>
+  </data>
+  <data name="rchpy2.Text" xml:space="preserve">
+    <value># 2. Program to calculate total marks, percentage and grade of a student. 
+#     Marks obtained in each of the three subjects are to be input by the user.
+#     Assign grades according to the following criteria: 
+#     Grade A: Percentage &gt;=80 
+#     Grade B: Percentage&gt;=70 and =60 
+#     Grade C: Percentage&gt;=60 and =40 
+#     Grade D: Percentage&gt;=40 and &lt;40 
+#     Grade E: Percentage&lt;40
+
+s1,s2,s3=int(input("Enter 3 subject marks")),int(input()),int(input())
+tot=s1+s2+s3
+per=tot/3.0
+print("Total marks =",tot,"\n Percentage=",per)
+
+if(per&gt;=80):
+    print ("Grade = A")
+elif(per&gt;=60):
+    print ("Grade = B")
+elif(per&gt;=50):
+    print ("Grade = C")
+elif(per&gt;=40):
+    print ("Grade = D")
+else:
+    print ("Grade = E")</value>
+  </data>
+  <data name="rchpy3.Text" xml:space="preserve">
+    <value># 3. Program, using user-defined functions to find the area of rectangle,
+#     square, circle and triangle by accepting suitable input parameters from user.
+
+import math
+def findrect(l,b):
+    rectarea= l *b
+    print ("Rectangle area =",rectarea)
+    return
+def findtri(h,b):
+    triarea= 0.5 * h*b
+    print ("Triangle area =",triarea)
+    return
+def findsquare(b):
+    sqarea= b*b
+    print ("Square area =",sqarea)
+    return
+def findcir(r):
+    cirarea=math.pi*r*r
+    print ("Circle area =",cirarea)
+    return
+r=int(input("Entet radius "))
+findcir(r)
+b=int(input("Enter sides of square"))
+findsquare(b)
+h,b=int (input("Enter h and b values of triangle")),int(input())
+findtri(h,b)
+l,b=int (input("Enter l and b values of reactangle")),int(input())
+findrect(l,b)</value>
+  </data>
+  <data name="rchpy4.Text" xml:space="preserve">
+    <value># 4. Program to generate Pythagorean triplets.
+
+import math
+n= int(input("Enter n value"))
+for b in range(n):
+    for a in range(1, b):
+        c = math.sqrt( a * a + b * b)
+        if c % 1 == 0:
+           print(a, b, int(c))</value>
+  </data>
+  <data name="rchpy5.Text" xml:space="preserve">
+    <value># 5. Program to display the first n terms of Fibonacci series.
+
+n=int(input("Enter number of terms: "))
+s=1
+f=0
+i=1
+while(i&lt;=n):
+    if(i==1):
+        print (f)
+    elif(i==2):
+        print (s)
+    else:
+        t=f+s
+        print (t)
+        f=s
+        s=t
+    i=i+1</value>
+  </data>
+  <data name="rchpy6.Text" xml:space="preserve">
+    <value># 6. Program to check whether a given number is Armstrong number or not.
+
+n=int(input("Enter any integer"))
+m=n
+sum=0
+while(m!=0):
+    r=m %10
+    sum = sum+r**3
+    m=m/10
+if(n==sum):
+    print (n,"Is Amostrong number")
+else:
+    print (n,"Is NOT Amostrong number")</value>
+  </data>
+  <data name="rchpy7.Text" xml:space="preserve">
+    <value># 7. Program to find sum of the following series for n terms: 1 – 2/2! + 3/3! - - - - - n/n!
+
+def findfact(m):
+    f=1
+    for i in range(1,m+1):
+        f=f*i
+    return(f)
+n=int(input("Enter number of terms"))
+k=-1
+sum=1.0
+m=2
+while(m&lt;=n):
+    d=findfact(m)
+    sum=sum+(m/float(d))*k
+    k=-(k)
+    m=m+1
+print ("Sum of the series =",sum)</value>
+  </data>
+  <data name="rchpy8.Text" xml:space="preserve">
+    <value># 8. Program to calculate the sum of two compatible matrices.
+
+import random
+m,n=int(input("Enter order of matrix ")),int(input())
+a=[ [random.random()for row in range (m)] for col in range (n)]
+b=[ [random.random()for row in range (m)] for col in range (n)]
+c=[ [random.random()for row in range (m)] for col in range (n)]
+if (m==n):
+    print("Enter First matrix elements")
+    for i in range (m):
+        for j in range(n):
+            a[i][j]=int(input())
+    print("Enter second matrix elements")
+    for i in range (m):
+        for j in range(n):
+            b[i][j]=int(input())
+    for i in range (m):
+        for j in range(n):
+            c[i][j]=a[i][j]+b[i][j]
+    print ("Resultant Matrbx is")
+    for i in range (m):
+        for j in range(n):
+            print( c[i][j],)
+        print
+else:
+    print ("Not a square matrix")</value>
+  </data>
+  <data name="rchpy9.Text" xml:space="preserve">
+    <value># 9. Program to calculate the product of two compatible matrices.
+
+import random
+m,n=int(input("enter order of first matrix")),int(input())
+a=[[random.random()for row in range (m)]for col in range(n)]
+b=[[random.random()for row in range (m)]for col in range(n)]
+c=[[random.random()for row in range (m)]for col in range(n)]
+if(m==n):
+    print ("Enter first matrix elements")
+    for i in range(m):
+        for j in range(n):
+            a[i][j]=int(input())
+    print ("Enter second matrix elements")
+    for i in range(m):
+        for j in range(n):
+            b[i][j]=int(input())
+    for i in range (m):
+        for j in range(n):
+            c[i][j]=0
+            for k in range(m):
+                c[i][j]=c[i][j]+a[i][k]*b[k][j]
+    print ("Resultant matrix")
+    for i in range(m):
+        for j in range(n):
+            print (c[i][j],)
+        print
+</value>
+  </data>
+  <data name="rchpy10.Text" xml:space="preserve">
+    <value> # 10. Program to calculate the mass m in a chemical reaction. The mass m (in gms) disintegrates according to 
+#        the formula m=60/ (t+2), where t is the time in hours. Sketch a graph for t vs. m, where t&gt;=0. 
+
+import matplotlib.pyplot as plt
+tlist=[]
+mlist=[]
+interval=int(input("Enter size of tlist: "))
+for i in range (1,interval+1):
+    t=int(input("Enter t value: "))
+    tlist.append(t)
+    m=60/(t+2)
+    mlist.append(m)
+print("Corresponding mass value: ",m)
+plt.plot(tlist,mlist,'green')
+plt.ylabel('mass')
+plt.xlabel('Time')
+plt.show()</value>
+  </data>
+  <data name="rchpy11.Text" xml:space="preserve">
+    <value># 11. Input initial velocity and acceleration, and plot the following graphs depicting equations of motion: 
+#       I. velocity wrt time (v=u+at) 
+#       II. distancewrt time (s=u*t+0.5*a*t*t)
+#       III. distancewrt velocity (s=(v*v-u*u)/2*a) 
+
+import matplotlib.pyplot as plt
+t=0
+vf=[]
+d=[]
+def velocity (invel,accel):
+    t=0
+    if(invel&gt;=0 and accel&gt;=0):
+        for t in range (0,10):
+            v=u+a*t
+            t+=10
+            print(v)
+            vf.append(v)
+        print(vf)
+        plt.plot(vf)
+        plt.ylabel("Some numbers")
+        plt.show()
+    else:
+        print("Enter positive values")
+def disttime (invel,accel):
+    if(invel&gt;=0 and accel&gt;=0):
+        for t in range (0,10):
+            s=(u*t+0.5*a*t*t)
+            t+=10
+            print(s)
+            d.append(s)
+        print(d)
+        plt.plot(d)
+        plt.ylabel("Some numbers")
+        plt.show()
+    else:
+        print("Enter positive values")
+def distvel (invel,accel):
+    if(invel&gt;=0 and accel&gt;=0):
+        for v in range (0,10):
+            s=(v*v-u*u)/(2*a)
+            v+=10
+            print(s)
+            d.append(s)
+        print(d)
+        plt.plot(d)
+        plt.ylabel("Some numbers")
+        plt.show()
+    else:
+        print("Enter positive number")
+u=int(input("Enter initial velocity: "))
+a=int(input("Enter the acceleration: "))
+while True:
+    print("1.Velocity wrt to time")
+    print("2.Distance wrt to time")
+    print("3.Distance wrt to velocity")
+    print("4.Exit")
+    ch=int(input("Enter your choice: "))
+    if ch==1: velocity(u,a)
+    elif ch==2: disttime(u,a)
+    elif ch==3: distvel(u,a)
+    elif ch==4: exit(0)</value>
+  </data>
+  <data name="rchpy_con.Text" xml:space="preserve">
+    <value>                                                                       Practicals
+
+1. Program to convert the given temperature from Fahrenheit to Celsius and vice versa depending
+    upon user’s choice.
+
+2. Program to calculate total marks, percentage and grade of a student.
+    Marks obtained in each of the three subjects are to be input by the user.
+    Assign grades according to the following criteria:
+    Grade A: Percentage &gt;=80
+    Grade B: Percentage&gt;=70 and =60
+    Grade C: Percentage&gt;=60 and =40
+    Grade D: Percentage&gt;=40 and &lt;40
+    Grade E: Percentage&lt;40
+
+3. Program, using user-defined functions to find the area of rectangle, square, circle and triangle by 
+    accepting suitable input parameters from user.
+
+4. Program to generate Pythagorean triplets.
+
+5. Program to display the first n terms of Fibonacci series.
+
+6. Program to check whether a given number is Armstrong number or not.
+
+7. Program to find sum of the following series for n terms: 1 – 2/2! + 3/3! - - - - - n/n!
+
+8. Program to calculate the sum of two compatible matrices.
+
+9. Program to calculate the product of two compatible matrices.
+
+10. Program to calculate the mass m in a chemical reaction.
+      The mass m (in gms) disintegrates according to the formula m=60/ (t+2), 
+      where t is the time in hours. Sketch a graph for t vs. m, where t&gt;=0. 
+
+11. Input initial velocity and acceleration, and plot the following graphs depicting equations of motion: 
+      I. velocity wrt time (v=u+at)
+      II. distancewrt time (s=u*t+0.5*a*t*t)
+      III. distancewrt velocity (s=(v*v-u*u)/2*a) </value>
+  </data>
+</root>

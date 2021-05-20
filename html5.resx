@@ -1,0 +1,875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="rchip1.Text" xml:space="preserve">
+    <value>1. Write a HTML code to create simple Web page to display your college information.
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;sdc&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;&lt;center&gt;
+&lt;img src="G:\sdctmk.png" height="85" width="85"&gt;&lt;/img&gt;
+&lt;h1&gt;SESHADRIPURAM DEGREE COLLLEGE&lt;sup&gt;&amp;reg;&lt;/sup&gt;&lt;/h1&gt;
+&lt;h5&gt;"Vikas Bharathi" site no.3 Melkote, Veerasagara Layout,
+Gangasandra road Tumkur:  572105&lt;/h5&gt;&lt;hr /&gt;
+&lt;img src="h:\sdc.jpg" width="1000" height="400"&gt;&lt;/img&gt;&lt;hr /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;table border="1"&gt;
+&lt;tr&gt;
+&lt;td&gt;COURSE OFFERED&lt;/td&gt;
+&lt;td&gt;FACILITIES AVAILABLE&lt;/td&gt;
+&lt;td&gt;EVENTS ORGANIZED&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;BCA&lt;/li&gt;&lt;li&gt;BCOM&lt;/li&gt;&lt;li&gt;BBM&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;College bus&lt;/li&gt;&lt;li&gt;Canteen&lt;/li&gt;
+&lt;li&gt;Good Infrastructure&lt;/li&gt;&lt;li&gt;Well Equipped Laboratory&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;Sports&lt;/li&gt;&lt;li&gt;NCC&lt;/li&gt;&lt;li&gt;NSS&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;br&gt;&lt;br&gt;
+&lt;marquee behavior="alternate" bgcolor="yellow " scrolldelay="100"&gt;Admisions open for year 2019-2020&lt;/marquee&gt;
+&lt;h3&gt;&lt;u&gt;Application form&lt;/u&gt;&lt;/h3&gt;
+&lt;table&gt;&lt;form action="abc.html"&gt;
+&lt;tr&gt;&lt;td&gt;Name:&lt;/td&gt;&lt;td&gt;&lt;input type="text" maxlength="30" /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ph.no:&lt;/td&gt;&lt;td&gt;&lt;input type="text" maxlength="10" /&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Address:&lt;/td&gt;&lt;td&gt;&lt;textarea rows="3" cols="25" name="address"&gt;&lt;/textarea&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Course&lt;/td&gt;&lt;td&gt;&lt;input type="radio" name="course" value="bca"&gt;BCA
+&lt;input type="radio" name="course" value="bcom"&gt;BCOM
+&lt;input type="radio" name="course" value="bbm"&gt;BBM&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;input type="submit" value="submit"&gt;&lt;input type="reset" value="reset"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/form&gt;&lt;/table&gt;&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</value>
+  </data>
+  <data name="rchip2.Text" xml:space="preserve">
+    <value>2. Write a HTML code to display different levels of headings.
+
+
+ &lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;college name&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="pink"&gt; 
+&lt;h1&gt;&lt;b&gt;&lt;u&gt;Different levels of headings&lt;/u&gt;&lt;/b&gt;&lt;/h1&gt; 
+&lt;h1 style="color:blue"&gt;Seshadripuram degree college&lt;/h1&gt; 
+&lt;h2 style="color:red"&gt;Seshadripuram degree college&lt;/h2&gt; 
+&lt;h3 style="color:green"&gt;Seshadripuram degree college&lt;/h3&gt; 
+&lt;h4 style="color:black"&gt;Seshadripuam degree college&lt;/h4&gt; 
+&lt;h5 style="color:yellow"&gt;Seshadripuram degree college&lt;/h5&gt; 
+&lt;h6 style="color:orange"&gt;Seshadripuram degree college&lt;/h6&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip3.Text" xml:space="preserve">
+    <value>3. Write a HTML code to illustrate all text formatting tags.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;My first page&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="aqua"&gt; 
+&lt;h1&gt;&lt;u&gt;Text formatting tags&lt;/u&gt;&lt;/h1&gt; 
+&lt;h2&gt;ITALIC&lt;/h2&gt; 
+&lt;h3&gt;I am the student of &lt;i&gt; Seshadhripuram College&lt;/i&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;BOLD&lt;/h2&gt; 
+&lt;h3&gt;I am the student of &lt;b&gt;Seshadhripuram College&lt;/b&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;UNDERLINE&lt;/h2&gt; 
+&lt;h3&gt;I am the student of &lt;u&gt;Seshadhripuram College&lt;/u&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;SUBSCRIPT&lt;/h2&gt; 
+&lt;h3&gt;equation x&lt;sub&gt;2&lt;/sub&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;SUPERSCRIPT&lt;/h2&gt; 
+&lt;h3&gt;equation x&lt;sup&gt;2&lt;/sup&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;STRIKE&lt;/h2&gt; 
+&lt;h3&gt;The admissions&lt;s&gt; has been cancelled.&lt;/s&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;TELETYPE TEXT&lt;/h2&gt; 
+&lt;h3&gt;I am the student of Seshadhripuram college&lt;/h3&gt; 
+&lt;h3&gt;&lt;tt&gt;I am the student of Seshadhripuram college&lt;/tt&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;BIG TAG&lt;/h2&gt; 
+&lt;h3&gt;I am the student of Seshadhripuram college&lt;/h3&gt; 
+&lt;h3&gt;&lt;big&gt;I am the student of Seshadhripuram college&lt;/big&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;SMALL TAG&lt;/h2&gt; 
+&lt;h3&gt;I am the student of Seshadhripuram college&lt;br/&gt;&lt;/h3&gt; 
+&lt;h3&gt;&lt;small&gt;I am the student of Seshadhripuram college&lt;/small&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;h2&gt;BLOCK QUATATION&lt;/h2&gt; 
+&lt;h3&gt;&lt;q&gt;I am the student of &lt;q&gt;Seshadhripuram College&lt;/q&gt;&lt;/h3&gt; 
+&lt;hr&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip4.Text" xml:space="preserve">
+    <value>4. Write a HTML code to create different types of ordered lists.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;My first page&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="aquamarine"&gt; 
+&lt;ol&gt; 
+&lt;h1&gt;&lt;u&gt;Order List&lt;/u&gt;&lt;/h1&gt; 
+&lt;h2&gt;Seshadhripuram Degree College&lt;/h2&gt; 
+(default) 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/ol&gt; 
+&lt;ol type="1" start="5"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;ol type="a"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;ol type="a" start="6"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;ol type="i"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;ol type="i" start="5"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;ol type="I"&gt; 
+&lt;p&gt; 
+&lt;li&gt;Bachelor of Computer Application&lt;/li&gt; 
+&lt;li&gt;Bachelor of Commerce&lt;/li&gt; 
+&lt;li&gt;Bachelor of Business Mangement&lt;/li&gt; 
+&lt;/p&gt; 
+&lt;/ol&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip5.Text" xml:space="preserve">
+    <value>5. Write a HTML code to display the glossary of any 5 HTML tags using definition lists.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;my page&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="turquoise"&gt; 
+&lt;h1 style="color:crimson"&gt;Definition list&lt;/h1&gt; 
+&lt;ul type="circle"&gt; 
+&lt;h2&gt;&lt;li&gt;Internet&lt;/li&gt; 
+&lt;li&gt;Intranet&lt;/li&gt; 
+&lt;li&gt;Web server&lt;/li&gt; 
+&lt;li&gt;Web browser&lt;/li&gt;&lt;/h2&gt;&lt;/ul&gt; 
+&lt;hr&gt; 
+&lt;h1 style="color:crimson"&gt;Definitions&lt;/h1&gt; 
+&lt;dl&gt; 
+&lt;ul type="square"&gt; 
+&lt;h2&gt;&lt;dt&gt;&lt;li&gt;Internet&lt;/li&gt;&lt;/h2&gt;&lt;/dt&gt; 
+&lt;dd&gt;An internet is a network of networks which connectsmillions of computers&lt;/dd&gt; 
+&lt;h2&gt;&lt;dt&gt;&lt;li&gt;Intranet&lt;/li&gt;&lt;/dt&gt;&lt;/h2&gt; 
+&lt;dd&gt;An intranet is a private network that is contained with in an enterprize or organisation&lt;/dd&gt; 
+&lt;h2&gt;&lt;dt&gt;&lt;li&gt;Web server&lt;/li&gt;&lt;/dt&gt;&lt;/h2&gt; 
+&lt;dd&gt;Any server that delivers an XML document to another device can be a web server&lt;/dd&gt; 
+&lt;h2&gt;&lt;dt&gt;&lt;li&gt;Web browser&lt;/li&gt;&lt;/dt&gt;&lt;/h2&gt; 
+&lt;dd&gt;A web browser is a software program that allow the user to locates access and display a web page&lt;/dd&gt; 
+&lt;/ul&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip6.Text" xml:space="preserve">
+    <value>6. Write a HTML code to insert an image of ‘Tim Berners Lee’ and display his Bio data.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;tim berners lee&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="lavender"&gt; 
+&lt;h1 style="color:red"&gt;&lt;center&gt;&lt;u&gt;TIM-BERNERS LEE'S BIODATA&lt;/u&gt;&lt;/center&gt;&lt;/h1&gt; 
+&lt;center&gt;&lt;img src="G:\vedika3rdsem\IP LAB\timlee.jpg"&gt;&lt;/img&gt;&lt;/center&gt; 
+&lt;pre&gt; 
+&lt;h2 style="color:green"&gt;&lt;i&gt;&lt;b&gt;&lt;center&gt;Inventor of world wide web&lt;/center&gt;&lt;/b&gt;&lt;/i&gt;&lt;/h2&gt; 
+&lt;h2&gt; 
+&lt;b style="color:red"&gt;&lt;u&gt;BORN&lt;/u&gt;&lt;/b&gt;:8-june-1955 
+&lt;b style="color:red"&gt;&lt;u&gt;PLACE&lt;/u&gt;&lt;/b&gt;:London,England,UK. 
+&lt;b style="color:red"&gt;&lt;u&gt;INSTITUTION&lt;/u&gt;&lt;/b&gt;:WWWC 
+University of oxford 
+University of south emption 
+MIT 
+&lt;b style="color:red"&gt;&lt;u&gt;NOTABLE AWARDS&lt;/u&gt;&lt;/b&gt;:Turning Award 
+Queen Elizabeth prize 
+&lt;b style="color:red"&gt;&lt;u&gt;SPOUSE&lt;/u&gt;&lt;/b&gt;:Nancy carlson 
+&lt;b style="color:red"&gt;&lt;u&gt;CHILDREN&lt;/u&gt;&lt;/b&gt;:2 
+&lt;/pre&gt; 
+&lt;/h2&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip7.Text" xml:space="preserve">
+    <value>7. Write a HTML code to embed multimedia on to a web page.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;my first entry&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="honeydew"&gt; 
+&lt;h1 style="color:crimson"&gt;&lt;u&gt;&lt;center&gt;VEDIO&lt;/center&gt;&lt;/u&gt;&lt;/h1&gt; 
+&lt;center&gt;&lt;embed src="G:\3rdsem\IPLAB\samplevedio.mp4" border="4" width="480" height="480"&gt;&lt;/embed&gt;&lt;/center&gt; 
+&lt;h1 style="color:crimson"&gt;&lt;u&gt;&lt;center&gt;AUDIO&lt;/center&gt;&lt;/u&gt;&lt;/h1&gt; 
+&lt;center&gt;&lt;embed src="G:\3rdsem\IPLAB\sanorita.mp3"&gt;&lt;/embed&gt;&lt;/center&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip8.Text" xml:space="preserve">
+    <value>8. Write a HTML code to create text and images as links.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;text&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="aquamarine"&gt; 
+HTML tag: It is the root of the html document which is used to specify that the document is html. Head tag: Head tag is used to contain all the head element in the html file. 
+... 
+&lt;p&gt;to know more about tag &lt;a href="first.html"&gt;click here&lt;/a&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; 
+First.html 
+&lt;html&gt; 
+&lt;head&gt;&lt;title&gt;first&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="pink"&gt; 
+hTML is the standard markup language for Web pages. 
+With HTML you can create your own Website. 
+HTML is easy to learn - You will enjoy it! 
+to go back&lt;a href="textlink.html"&gt;press here&lt;/a&gt; 
+to know more about this&lt;a href="http://www.w3schools.com/html"&gt;click here&lt;/a&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; 
+Imglink.html 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;doggy&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+HUSKY DOGS ARE JUST OSM 
+&lt;a href="firstimg.html"&gt;&lt;img src="C:\husky.jpg"&gt; 
+&lt;/img&gt; 
+&lt;/a&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; 
+Firstimg.html 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;second&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;img src="C:\husky2.jpg"&gt;&lt;/img&gt; 
+The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial asks only add to the appeal of this breed, which originated in Siberia. 
+Read more at&lt;a href= "https://dogtime.com/dog-breeds/siberian-husky#OvhMMDF2LqOc0MZi.99"&gt;this link&lt;/a&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip9.Text" xml:space="preserve">
+    <value>9. Write a HTML code to create your class time table.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;time table&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body bgcolor="peachpuff"&gt; 
+&lt;center&gt; 
+&lt;h1 style="color:red"&gt;&lt;u&gt;TIME TABLE&lt;/u&gt;&lt;/h1&gt;&lt;/center&gt; 
+&lt;center&gt;&lt;table border="5" height="300" width="900"&gt;&lt;/center&gt; 
+&lt;tr style="color:teal"&gt; 
+&lt;th&gt;&lt;b&gt;Days&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;9:00am-9:55am&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;9:55am-10:50am&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;10:50am-11:15am&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;11:15am-12:10pm&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;12:10pm-1:05pm&lt;/b&gt;&lt;/th&gt; 
+&lt;th&gt;&lt;b&gt;1:05pm-2:00pm&lt;/b&gt;&lt;/th&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Monday&lt;/b&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt; 
+&lt;td rowspan="6"&gt;&lt;b&gt;&lt;center&gt;BREAK&lt;/center&gt;&lt;/b&gt;&lt;/td&gt; 
+&lt;td colspan="2"&gt;&lt;center&gt;---C++ lab---&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Tuesday&lt;/b&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;IC&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Wednesday&lt;/b&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;TEST&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Thursday&lt;/b&gt;&lt;/td&gt; 
+&lt;td colspan="2"&gt;&lt;center&gt;---NT lab---&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Friday&lt;/b&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;IC&lt;/center&gt;&lt;/td&gt; 
+&lt;td colspan="2"&gt;&lt;center&gt;---IP lab---&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;tr&gt; 
+&lt;td&gt;&lt;b&gt;Saturday&lt;/b&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;Activity hours&lt;/center&gt;&lt;/td&gt; 
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt; 
+&lt;/tr&gt; 
+&lt;/table&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip10.Text" xml:space="preserve">
+    <value>10. Write a HTML code to create a form to accept student details.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;form&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body background="C:\wallpaper.png"&gt; 
+&lt;form&gt; 
+&lt;fieldset width="350"&gt; 
+&lt;h1 style="color:brown"&gt;&lt;u&gt;&lt;b&gt;&lt;i&gt;Student Details&lt;/u&gt;&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt; 
+&lt;label&gt;&lt;b&gt;Student name:&lt;/b&gt;&lt;/label&gt; 
+&lt;input type="text" name="name" value="enter name" /&gt; 
+&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;Register num:&lt;/b&gt;&lt;/label&gt; 
+&lt;input type="text" name="name" value="reg no"/&gt; 
+&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Passed year&lt;/u&gt;&lt;/b&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;SSLC&lt;/b&gt;&lt;/label&gt; 
+&lt;select name="passed year"&gt; 
+&lt;option&gt;--select year--&lt;/option&gt; 
+&lt;option&gt;2014&lt;/option&gt; 
+&lt;option&gt;2015&lt;/option&gt; 
+&lt;option&gt;2016&lt;/option&gt; 
+&lt;option&gt;2017&lt;/option&gt; 
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;PUC&lt;/b&gt;&lt;/label&gt; 
+&lt;select name="passed year"&gt; 
+&lt;option&gt;--select year--&lt;/option&gt; 
+&lt;option&gt;2015&lt;/option&gt; 
+&lt;option&gt;2016&lt;/option&gt; 
+&lt;option&gt;2017&lt;/option&gt; 
+&lt;option&gt;2018&lt;/option&gt; 
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;BCA&lt;/b&gt;&lt;/label&gt; 
+&lt;select name="passed year"&gt; 
+&lt;&lt;option&gt;--select year--&lt;/option&gt; 
+&lt;option&gt;2015&lt;/option&gt; 
+&lt;option&gt;2016&lt;/option&gt; 
+&lt;option&gt;2017&lt;/option&gt; 
+&lt;option&gt;2018&lt;/option&gt; 
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Document Submitted:&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;&gt;&lt;br /&gt;&lt;br /&gt; 
+SSLC Marks Card&lt;input type="checkbox" value="SSLC" name="check"/&gt;&lt;br /&gt;&lt;br /&gt; 
+PUC Marks Card&lt;input type="checkbox" value="PUC" name="check"/&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;&lt;u&gt;General information&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;input type="radio" name="name"/&gt;MALE 
+&lt;input type="radio" name="name"/&gt;FEMALE 
+&lt;input type="radio" name="name"/&gt;OTHERS&lt;br /&gt;&lt;br/&gt; 
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Address&lt;/b&gt;&lt;/u&gt;&lt;/label&gt; 
+&lt;textarea name="address" rows="2" columns="25"&gt; 
+enter address&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Disclaimer:&lt;/b&gt;&lt;/u&gt;&lt;/label&gt; 
+the given information is correct.......&lt;br /&gt;&lt;br /&gt; 
+&lt;input type="submit" value="submit"/&gt; 
+&lt;input type="reset" value="clear"/&gt; 
+&lt;/form&gt; 
+&lt;/fieldset&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip11.Text" xml:space="preserve">
+    <value>11. Write a HTML code to display a menu of twelve months.
+
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;/head&gt;
+&lt;body background="C:\wallpaper\lili1.png"&gt; 
+&lt;form&gt;
+&lt;u&gt;&lt;i&gt;&lt;b&gt;&lt;h1 style="color:peachpuff"&gt;Displaying a menu of twelve months&lt;/h1&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt; 
+&lt;h3 style="color:lavender"&gt;&lt;label&gt;Name&lt;/label&gt; 
+&lt;input type="text" name="name" value="enter name" /&gt; 
+&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;Father name&lt;/label&gt; 
+&lt;input type="text" name="name" value="enter name" /&gt; 
+&lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;Date of month&lt;/label&gt; 
+&lt;select name="months" value="select month"&gt; 
+&lt;option&gt;select months&lt;/option&gt; 
+&lt;option&gt;JANUARY&lt;/option&gt; 
+&lt;option&gt;FEBRUARY&lt;/option&gt; 
+&lt;option&gt;MARCH&lt;/option&gt; 
+&lt;option&gt;APRIL&lt;/option&gt; 
+&lt;option&gt;MAY&lt;/option&gt; 
+&lt;option&gt;JUNE&lt;/option&gt; 
+&lt;option&gt;JULY&lt;/option&gt; 
+&lt;option&gt;AUGUST&lt;/option&gt; 
+&lt;option&gt;SEPTEMBER&lt;/option&gt; 
+&lt;option&gt;OCTOBER&lt;/option&gt; 
+&lt;option&gt;NOVEMBER&lt;/option&gt; 
+&lt;option&gt;DECEMBER&lt;/option&gt; 
+&lt;br /&gt;&lt;br /&gt;&lt;input type="radio" name="name" checked="checked" /&gt; 
+MALE 
+&lt;input type="radio" name="name" checked="checked" /&gt; 
+FEMALE &lt;br /&gt;&lt;br /&gt; 
+&lt;label&gt;College name&lt;/label&gt; 
+&lt;input type="text" name="college name" value="enter college name"/&gt; 
+&lt;br /&gt;&lt;br /&gt; 
+&lt;pre&gt; 
+&lt;input type="submit" value="accept"/&gt; 
+&lt;input type="reset" value="reject"/&gt;&lt;/h3&gt; 
+&lt;/pre&gt;  
+&lt;/form&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </value>
+  </data>
+  <data name="rchip12.Text" xml:space="preserve">
+    <value>12. Write a HTML code to create nested frames.
+
+Save the below code as frame.html
+
+&lt;frameset cols="50%,*"&gt;
+  &lt;frameset rows="50%,*"&gt;
+    &lt;frame src="frame1.html"&gt;
+    &lt;frame src="frame2.html"&gt;
+  &lt;/frameset&gt;
+  &lt;frameset&gt;
+    &lt;frame src="frame3.html"&gt;
+  &lt;/frameset&gt;
+&lt;/frameset&gt;
+
+Save the below code as frame1.html
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;.
+&lt;body background="h:\vedika3rdsem\IP LAB\html walpaper\lili1.png"&gt;
+&lt;form&gt;.
+&lt;u&gt;&lt;i&gt;&lt;b&gt;&lt;h1 style="color:peachpuff"&gt;Displaying a menu of twelve months&lt;/h1&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;h3 style="color:lavender"&gt;&lt;label&gt;Name&lt;/label&gt;
+&lt;input type="text" name="name" value="enter name" /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;Father name&lt;/label&gt;
+&lt;input type="text" name="name" value="enter name" /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;Date of month&lt;/label&gt;
+&lt;select name="months" value="select month"&gt;
+&lt;option&gt;select months&lt;/option&gt;
+&lt;option&gt;JANUARY&lt;/option&gt;
+&lt;option&gt;FEBRUARY&lt;/option&gt;
+&lt;option&gt;MARCH&lt;/option&gt;
+&lt;option&gt;APRIL&lt;/option&gt;
+&lt;option&gt;MAY&lt;/option&gt;
+&lt;option&gt;JUNE&lt;/option&gt;
+&lt;option&gt;JULY&lt;/option&gt;
+&lt;option&gt;AUGUST&lt;/option&gt;
+&lt;option&gt;SEPTEMBER&lt;/option&gt;
+&lt;option&gt;OCTOBER&lt;/option&gt;
+&lt;option&gt;NOVEMBER&lt;/option&gt;
+&lt;option&gt;DECEMBER&lt;/option&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;input type="radio" name="name" checked="checked" /&gt;
+MALE
+&lt;input type="radio" name="name" checked="checked" /&gt;
+FEMALE &lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;College name&lt;/label&gt;
+&lt;input type="text" name="college name" value="enter college name"/&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;pre&gt;
+&lt;input type="submit" value="accept"/&gt;
+&lt;input type="reset" value="reject"/&gt;&lt;/h3&gt;
+&lt;/pre&gt;
+&lt;/body&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Save the below code as frame2.html
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;time table&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="peachpuff"&gt;
+&lt;center&gt;
+&lt;h1 style="color:red"&gt;&lt;u&gt;TIME TABLE&lt;/u&gt;&lt;/h1&gt;&lt;/center&gt;
+&lt;center&gt;&lt;table border="5" height="300" width="900"&gt;&lt;/center&gt;
+&lt;tr style="color:teal"&gt;
+&lt;th&gt;&lt;b&gt;Days&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;9:00am-9:55am&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;9:55am-10:50am&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;10:50am-11:15am&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;11:15am-12:10pm&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;12:10pm-1:05pm&lt;/b&gt;&lt;/th&gt;
+&lt;th&gt;&lt;b&gt;1:05pm-2:00pm&lt;/b&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Monday&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt;
+&lt;td rowspan="6"&gt;&lt;b&gt;&lt;center&gt;BREAK&lt;/center&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;center&gt;---C++ lab---&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Tuesday&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;IC&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Wednesday&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;TEST&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Thursday&lt;/b&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;center&gt;---NT lab---&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;IP&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Friday&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;ENG&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;IC&lt;/center&gt;&lt;/td&gt;
+&lt;td colspan="2"&gt;&lt;center&gt;---IP lab---&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Saturday&lt;/b&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;C++&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;NT&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;Activity hours&lt;/center&gt;&lt;/td&gt;
+&lt;td&gt;&lt;center&gt;KAN&lt;/center&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Save the below code as frame3.html
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body background="C:\wallpaper\image.png"&gt;
+&lt;form&gt;
+&lt;fieldset width="350"&gt;
+&lt;h1 style="color:brown"&gt;&lt;u&gt;&lt;b&gt;&lt;i&gt;Student Details&lt;/u&gt;&lt;/b&gt;&lt;/i&gt;&lt;/h1&gt;
+&lt;label&gt;&lt;b&gt;Student name:&lt;/b&gt;&lt;/label&gt;
+&lt;input type="text" name="name" value="enter name" /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;Register num:&lt;/b&gt;&lt;/label&gt;
+&lt;input type="text" name="name" value="reg no"/&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Passed year&lt;/u&gt;&lt;/b&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;SSLC&lt;/b&gt;&lt;/label&gt;
+&lt;select name="passed year"&gt;
+&lt;option&gt;--select year--&lt;/option&gt;
+&lt;option&gt;2014&lt;/option&gt;
+&lt;option&gt;2015&lt;/option&gt;
+&lt;option&gt;2016&lt;/option&gt;
+&lt;option&gt;2017&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;PUC&lt;/b&gt;&lt;/label&gt;
+&lt;select name="passed year"&gt;
+&lt;option&gt;--select year--&lt;/option&gt;
+&lt;option&gt;2015&lt;/option&gt;
+&lt;option&gt;2016&lt;/option&gt;
+&lt;option&gt;2017&lt;/option&gt;
+&lt;option&gt;2018&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;BCA&lt;/b&gt;&lt;/label&gt;
+&lt;select name="passed year"&gt;
+&lt;&lt;option&gt;--select year--&lt;/option&gt;
+&lt;option&gt;2015&lt;/option&gt;
+&lt;option&gt;2016&lt;/option&gt;
+&lt;option&gt;2017&lt;/option&gt;
+&lt;option&gt;2018&lt;/option&gt;
+&lt;/select&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Document Submitted:&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;&gt;&lt;br /&gt;&lt;br /&gt;
+SSLC Marks Card&lt;input type="checkbox" value="SSLC" name="check"/&gt;&lt;br /&gt;&lt;br /&gt;
+PUC Marks Card&lt;input type="checkbox" value="PUC" name="check"/&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;&lt;u&gt;General information&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;input type="radio" name="name"/&gt;MALE
+&lt;input type="radio" name="name"/&gt;FEMALE
+&lt;input type="radio" name="name"/&gt;OTHERS&lt;br /&gt;&lt;br/&gt;
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Address&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;
+&lt;textarea name="address" rows="2" columns="25"&gt;
+enter address&lt;/textarea&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;label&gt;&lt;b&gt;&lt;u&gt;Disclaimer:&lt;/b&gt;&lt;/u&gt;&lt;/label&gt;
+the given information is correct.......&lt;br /&gt;&lt;br /&gt;
+&lt;input type="submit" value="submit"/&gt;
+&lt;input type="reset" value="clear"/&gt;
+&lt;/form&gt;
+&lt;/fieldset&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="rchip13.Text" xml:space="preserve">
+    <value>13. Writing XML web Documents which make use of XML Declaration, Element Declaration,
+      Attribute Deceleration.
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt; 
+&lt;!DOCTYPE books&gt; 
+&lt;books&gt; 
+&lt;book category="text book"&gt; 
+&lt;title&gt;Programming the world wide&lt;/title&gt; 
+&lt;author&gt;W.B.Sebesta&lt;/author&gt; 
+&lt;publication&gt;Person Education&lt;/publication&gt; 
+&lt;/book&gt; 
+&lt;book category="text-book"&gt; 
+&lt;title&gt;Web programming&lt;/title&gt; 
+&lt;author&gt;Srinath.S&lt;/author&gt; 
+&lt;publication&gt;Skyward publication&lt;/publication&gt; 
+&lt;/book&gt; 
+&lt;book&gt;Category="text book"&gt; 
+&lt;title&gt;c++&lt;/title&gt; 
+&lt;author&gt;Balaguru swamy&lt;/author&gt; 
+&lt;publication&gt;Tata mcgrow publication&lt;/publication&gt; 
+&lt;/book&gt; 
+&lt;/books&gt; </value>
+  </data>
+  <data name="rchip14.Text" xml:space="preserve">
+    <value>14. Usage of Internal DTD, External DTD, Entity Declaration.
+
+Save the below code as internal.dtd
+
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE note [
+&lt;!ELEMENT note (to,from,heading,body)&gt;
+&lt;!ELEMENT to (#PCDATA)&gt;
+&lt;!ELEMENT from (#PCDATA)&gt;
+&lt;!ELEMENT heading (#PCDATA)&gt;
+&lt;!ELEMENT body (#PCDATA)&gt;
+]&gt;
+&lt;note&gt;
+&lt;to&gt;Tove&lt;/to&gt;
+&lt;from&gt;Jani&lt;/from&gt;
+&lt;heading&gt;Reminder&lt;/heading&gt;
+&lt;body&gt;Don't forget me this weekend&lt;/body&gt;
+&lt;/note&gt;
+
+Save the below code as note.dtd to run external dtd.
+
+&lt;!ELEMENT note (to,from,heading,body)&gt;
+&lt;!ELEMENT to (#PCDATA)&gt;
+&lt;!ELEMENT from (#PCDATA)&gt;
+&lt;!ELEMENT heading (#PCDATA)&gt;
+&lt;!ELEMENT body (#PCDATA)&gt;
+
+Save the below code as external.dtd
+
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE note SYSTEM "note.dtd"&gt;
+&lt;note&gt;
+  &lt;to&gt;Tove&lt;/to&gt;
+  &lt;from&gt;Jani&lt;/from&gt;
+  &lt;heading&gt;Reminder&lt;/heading&gt;
+  &lt;body&gt;Don't forget me this weekend!&lt;/body&gt;
+&lt;/note&gt;
+</value>
+  </data>
+  <data name="rchip_con.Text" xml:space="preserve">
+    <value>                                                                            Practicals
+
+1. Write a HTML code to create simple Web page to display your college information.
+
+2. Write a HTML code to display different levels of headings.
+
+3. Write a HTML code to illustrate all text formatting tags.
+
+4. Write a HTML code to create different types of ordered lists.
+
+5. Write a HTML code to display the glossary of any 5 HTML tags using definition lists.
+
+6. Write a HTML code to insert an image of ‘Tim Berners Lee’ and display his Bio data.
+
+7. Write a HTML code to embed multimedia on to a web page.
+
+8. Write a HTML code to create text and images as links.
+
+9. Write a HTML code to create your class time table.
+
+10. Write a HTML code to create a form to accept student details.
+
+11. Write a HTML code to display a menu of twelve months.
+
+12. Write a HTML code to create nested frames.
+
+13. Writing XML web Documents which make use of XML Declaration,Element Declaration, 
+       Attribute Deceleration.
+
+14. Usage of Internal DTD, External DTD, Entity Declaration.</value>
+  </data>
+</root>
